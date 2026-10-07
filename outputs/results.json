@@ -1,0 +1,2087 @@
+{
+ "base_utilisation": 0.6,
+ "gpu": {
+  "H100": {
+   "gpu_clouds": [
+    [
+     "Lambda",
+     3.99
+    ],
+    [
+     "CoreWeave",
+     6.155
+    ],
+    [
+     "RunPod",
+     3.49
+    ],
+    [
+     "Together AI",
+     3.99
+    ]
+   ],
+   "hyperscalers": [
+    [
+     "AWS",
+     6.88
+    ],
+    [
+     "Google Cloud",
+     11.0613
+    ],
+    [
+     "Microsoft Azure",
+     12.29
+    ]
+   ],
+   "small_clouds": [
+    [
+     "Vast.ai",
+     2.9418
+    ],
+    [
+     "Shadeform",
+     3.2
+    ],
+    [
+     "Hyperstack",
+     3.2
+    ],
+    [
+     "Crusoe",
+     3.9
+    ],
+    [
+     "Nebius",
+     4.5
+    ],
+    [
+     "Verda (DataCrunch)",
+     3.81
+    ],
+    [
+     "Jarvislabs",
+     3.49
+    ],
+    [
+     "DigitalOcean (GPU Droplets)",
+     4.41
+    ],
+    [
+     "Paperspace (DigitalOcean)",
+     5.95
+    ],
+    [
+     "Massed Compute",
+     3.14
+    ],
+    [
+     "Thunder Compute",
+     3.2
+    ],
+    [
+     "Scaleway",
+     3.5682
+    ],
+    [
+     "Denvr Dataworks",
+     2.45
+    ],
+    [
+     "Civo",
+     2.99
+    ],
+    [
+     "Modal",
+     3.9492
+    ]
+   ],
+   "small_cloud_median": 3.49,
+   "gpu_cloud_median": 3.99,
+   "hyperscaler_median": 11.0613,
+   "cheapest": 2.45
+  },
+  "H200": {
+   "gpu_clouds": [
+    [
+     "CoreWeave",
+     6.305
+    ],
+    [
+     "RunPod",
+     4.59
+    ],
+    [
+     "Together AI",
+     5.99
+    ]
+   ],
+   "hyperscalers": [
+    [
+     "AWS",
+     7.912
+    ],
+    [
+     "Google Cloud",
+     10.6009
+    ]
+   ],
+   "small_clouds": [
+    [
+     "Vast.ai",
+     4.8035
+    ],
+    [
+     "Shadeform",
+     3.0
+    ],
+    [
+     "Hyperstack",
+     3.99
+    ],
+    [
+     "Crusoe",
+     4.29
+    ],
+    [
+     "Nebius",
+     5.4
+    ],
+    [
+     "Verda (DataCrunch)",
+     4.97
+    ],
+    [
+     "Jarvislabs",
+     4.59
+    ],
+    [
+     "DigitalOcean (GPU Droplets)",
+     4.47
+    ],
+    [
+     "Massed Compute",
+     3.62
+    ],
+    [
+     "OVHcloud",
+     6.195
+    ],
+    [
+     "Civo",
+     3.49
+    ],
+    [
+     "Koyeb",
+     3.0
+    ],
+    [
+     "Modal",
+     4.5396
+    ]
+   ],
+   "small_cloud_median": 4.47,
+   "gpu_cloud_median": 5.99,
+   "hyperscaler_median": 9.25645,
+   "cheapest": 3.0
+  },
+  "B200": {
+   "gpu_clouds": [
+    [
+     "Lambda",
+     6.69
+    ],
+    [
+     "CoreWeave",
+     8.6
+    ],
+    [
+     "RunPod",
+     6.79
+    ],
+    [
+     "Together AI",
+     8.19
+    ]
+   ],
+   "hyperscalers": [
+    [
+     "AWS",
+     14.2416
+    ]
+   ],
+   "small_clouds": [
+    [
+     "Vast.ai",
+     7.8135
+    ],
+    [
+     "Shadeform",
+     5.4094
+    ],
+    [
+     "Hyperstack",
+     6.0
+    ],
+    [
+     "Nebius",
+     8.5
+    ],
+    [
+     "Verda (DataCrunch)",
+     7.2
+    ],
+    [
+     "Massed Compute",
+     5.4325
+    ],
+    [
+     "Koyeb",
+     5.5
+    ],
+    [
+     "Modal",
+     6.2496
+    ]
+   ],
+   "small_cloud_median": 6.1248000000000005,
+   "gpu_cloud_median": 7.49,
+   "hyperscaler_median": 14.2416,
+   "cheapest": 5.4094
+  }
+ },
+ "cases": [
+  {
+   "case": "Llama 3.1 8B",
+   "gpu": "H100",
+   "benchmark": "NVIDIA TensorRT-LLM perf overview | Llama 3.1 8B Instruct (nvidia/Llama-3.1-8B-Instruct-FP8) | H100 SXM 80GB x1 FP8 | in 1000 / out 1000 | 14991.62 tok/s per GPU",
+   "benchmark_url": "https://nvidia.github.io/TensorRT-LLM/performance/perf-overview.html",
+   "tps_per_gpu": 14991.62,
+   "gpu_prices": {
+    "gpu_clouds": [
+     [
+      "Lambda",
+      3.99
+     ],
+     [
+      "CoreWeave",
+      6.155
+     ],
+     [
+      "RunPod",
+      3.49
+     ],
+     [
+      "Together AI",
+      3.99
+     ]
+    ],
+    "hyperscalers": [
+     [
+      "AWS",
+      6.88
+     ],
+     [
+      "Google Cloud",
+      11.0613
+     ],
+     [
+      "Microsoft Azure",
+      12.29
+     ]
+    ],
+    "small_clouds": [
+     [
+      "Vast.ai",
+      2.9418
+     ],
+     [
+      "Shadeform",
+      3.2
+     ],
+     [
+      "Hyperstack",
+      3.2
+     ],
+     [
+      "Crusoe",
+      3.9
+     ],
+     [
+      "Nebius",
+      4.5
+     ],
+     [
+      "Verda (DataCrunch)",
+      3.81
+     ],
+     [
+      "Jarvislabs",
+      3.49
+     ],
+     [
+      "DigitalOcean (GPU Droplets)",
+      4.41
+     ],
+     [
+      "Paperspace (DigitalOcean)",
+      5.95
+     ],
+     [
+      "Massed Compute",
+      3.14
+     ],
+     [
+      "Thunder Compute",
+      3.2
+     ],
+     [
+      "Scaleway",
+      3.5682
+     ],
+     [
+      "Denvr Dataworks",
+      2.45
+     ],
+     [
+      "Civo",
+      2.99
+     ],
+     [
+      "Modal",
+      3.9492
+     ]
+    ],
+    "small_cloud_median": 3.49,
+    "gpu_cloud_median": 3.99,
+    "hyperscaler_median": 11.0613,
+    "cheapest": 2.45
+   },
+   "tiers": {
+    "Cheapest on-demand": {
+     "usd_per_gpu_hour": 2.45,
+     "cost_per_1m_output": 0.07565955242056958
+    },
+    "Small-cloud / marketplace median": {
+     "usd_per_gpu_hour": 3.49,
+     "cost_per_1m_output": 0.10777626038685217
+    },
+    "GPU-cloud median": {
+     "usd_per_gpu_hour": 3.99,
+     "cost_per_1m_output": 0.12321698537064188
+    },
+    "Hyperscaler median": {
+     "usd_per_gpu_hour": 11.0613,
+     "cost_per_1m_output": 0.34158898252638625
+    }
+   },
+   "hosts": [
+    {
+     "host": "DeepInfra",
+     "host_model": "Meta-Llama-3.1-8B-Instruct-Turbo",
+     "input_price": 0.02,
+     "output_price": 0.04,
+     "price": 6e-05,
+     "cost": 0.00012321698537064187,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": -1.0536164228440312,
+     "breakeven_util": 1.2321698537064187,
+     "source_url": "https://deepinfra.com/pricing"
+    },
+    {
+     "host": "Together AI",
+     "host_model": "Llama 3 8B Instruct Lite",
+     "input_price": 0.14,
+     "output_price": 0.14,
+     "price": 0.00028,
+     "cost": 0.00012321698537064187,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.5599393379619932,
+     "breakeven_util": 0.26403639722280403,
+     "source_url": "https://www.together.ai/pricing"
+    },
+    {
+     "host": "Fireworks AI",
+     "host_model": "Size-based tier: 4B-16B parameters (e.g. Llama 3.1 8B)",
+     "input_price": 0.2,
+     "output_price": 0.2,
+     "price": 0.0004,
+     "cost": 0.00012321698537064187,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.6919575365733953,
+     "breakeven_util": 0.1848254780559628,
+     "source_url": "https://docs.fireworks.ai/serverless/pricing"
+    },
+    {
+     "host": "Amazon Bedrock",
+     "host_model": "Llama 3.1 Instruct (8B)",
+     "input_price": 0.22,
+     "output_price": 0.22,
+     "price": 0.00044,
+     "cost": 0.00012321698537064187,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.7199613968849048,
+     "breakeven_util": 0.1680231618690571,
+     "source_url": "https://aws.amazon.com/bedrock/pricing/"
+    }
+   ],
+   "sensitivity": [
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.3,
+     "cost_per_1m_output": 0.15131910484113917
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.21555252077370435
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.24643397074128376
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.6831779650527725
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.4,
+     "cost_per_1m_output": 0.11348932863085437
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.16166439058027826
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.18482547805596283
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.5123834737895793
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.5,
+     "cost_per_1m_output": 0.0907914629046835
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.12933151246422261
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.14786038244477026
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.40990677903166345
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.6,
+     "cost_per_1m_output": 0.07565955242056958
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.10777626038685217
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.12321698537064188
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.34158898252638625
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.7,
+     "cost_per_1m_output": 0.06485104493191678
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.09237965176015901
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.10561455888912162
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.2927905564511882
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.8,
+     "cost_per_1m_output": 0.056744664315427185
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.08083219529013913
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.09241273902798142
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.25619173689478963
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.9,
+     "cost_per_1m_output": 0.05043970161371305
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.07185084025790145
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.08214465691376124
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.2277259883509241
+    }
+   ]
+  },
+  {
+   "case": "Llama 3.3 70B",
+   "gpu": "H100",
+   "benchmark": "NVIDIA TensorRT-LLM perf overview | Llama 3.3 70B Instruct (nvidia/Llama-3.3-70B-Instruct-FP8) | H100 SXM 80GB x2 FP8 | in 1000 / out 1000 | 2090.53 tok/s per GPU",
+   "benchmark_url": "https://nvidia.github.io/TensorRT-LLM/performance/perf-overview.html",
+   "tps_per_gpu": 2090.53,
+   "gpu_prices": {
+    "gpu_clouds": [
+     [
+      "Lambda",
+      3.99
+     ],
+     [
+      "CoreWeave",
+      6.155
+     ],
+     [
+      "RunPod",
+      3.49
+     ],
+     [
+      "Together AI",
+      3.99
+     ]
+    ],
+    "hyperscalers": [
+     [
+      "AWS",
+      6.88
+     ],
+     [
+      "Google Cloud",
+      11.0613
+     ],
+     [
+      "Microsoft Azure",
+      12.29
+     ]
+    ],
+    "small_clouds": [
+     [
+      "Vast.ai",
+      2.9418
+     ],
+     [
+      "Shadeform",
+      3.2
+     ],
+     [
+      "Hyperstack",
+      3.2
+     ],
+     [
+      "Crusoe",
+      3.9
+     ],
+     [
+      "Nebius",
+      4.5
+     ],
+     [
+      "Verda (DataCrunch)",
+      3.81
+     ],
+     [
+      "Jarvislabs",
+      3.49
+     ],
+     [
+      "DigitalOcean (GPU Droplets)",
+      4.41
+     ],
+     [
+      "Paperspace (DigitalOcean)",
+      5.95
+     ],
+     [
+      "Massed Compute",
+      3.14
+     ],
+     [
+      "Thunder Compute",
+      3.2
+     ],
+     [
+      "Scaleway",
+      3.5682
+     ],
+     [
+      "Denvr Dataworks",
+      2.45
+     ],
+     [
+      "Civo",
+      2.99
+     ],
+     [
+      "Modal",
+      3.9492
+     ]
+    ],
+    "small_cloud_median": 3.49,
+    "gpu_cloud_median": 3.99,
+    "hyperscaler_median": 11.0613,
+    "cheapest": 2.45
+   },
+   "tiers": {
+    "Cheapest on-demand": {
+     "usd_per_gpu_hour": 2.45,
+     "cost_per_1m_output": 0.5425701899801768
+    },
+    "Small-cloud / marketplace median": {
+     "usd_per_gpu_hour": 3.49,
+     "cost_per_1m_output": 0.7728856991962519
+    },
+    "GPU-cloud median": {
+     "usd_per_gpu_hour": 3.99,
+     "cost_per_1m_output": 0.8836143093962879
+    },
+    "Hyperscaler median": {
+     "usd_per_gpu_hour": 11.0613,
+     "cost_per_1m_output": 2.449604752011318
+    }
+   },
+   "hosts": [
+    {
+     "host": "DeepInfra",
+     "host_model": "Llama-3.3-70B-Instruct-Turbo",
+     "input_price": 0.1,
+     "output_price": 0.32,
+     "price": 0.00042,
+     "cost": 0.0008836143093962879,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": -1.1038435938006854,
+     "breakeven_util": 1.262306156280411,
+     "source_url": "https://deepinfra.com/pricing"
+    },
+    {
+     "host": "Amazon Bedrock",
+     "host_model": "Llama 3.3 Instruct (70B)",
+     "input_price": 0.72,
+     "output_price": 0.72,
+     "price": 0.00144,
+     "cost": 0.0008836143093962879,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.3863789518081334,
+     "breakeven_util": 0.36817262891511987,
+     "source_url": "https://aws.amazon.com/bedrock/pricing/"
+    },
+    {
+     "host": "Fireworks AI",
+     "host_model": "Size-based tier: >16B parameters (e.g. Llama 3.3 70B)",
+     "input_price": 0.9,
+     "output_price": 0.9,
+     "price": 0.0018,
+     "cost": 0.0008836143093962879,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.5091031614465067,
+     "breakeven_util": 0.29453810313209594,
+     "source_url": "https://docs.fireworks.ai/serverless/pricing"
+    },
+    {
+     "host": "Together AI",
+     "host_model": "Llama 3.3 70B",
+     "input_price": 1.04,
+     "output_price": 1.04,
+     "price": 0.00208,
+     "cost": 0.0008836143093962879,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.5751854281748616,
+     "breakeven_util": 0.254888743095083,
+     "source_url": "https://www.together.ai/pricing"
+    }
+   ],
+   "sensitivity": [
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.3,
+     "cost_per_1m_output": 1.0851403799603536
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.3,
+     "cost_per_1m_output": 1.5457713983925039
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.3,
+     "cost_per_1m_output": 1.7672286187925759
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.3,
+     "cost_per_1m_output": 4.899209504022636
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.4,
+     "cost_per_1m_output": 0.8138552849702653
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.4,
+     "cost_per_1m_output": 1.1593285487943779
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.4,
+     "cost_per_1m_output": 1.325421464094432
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.4,
+     "cost_per_1m_output": 3.674407128016977
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.5,
+     "cost_per_1m_output": 0.6510842279762123
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.9274628390355023
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.5,
+     "cost_per_1m_output": 1.0603371712755456
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.5,
+     "cost_per_1m_output": 2.9395257024135817
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.6,
+     "cost_per_1m_output": 0.5425701899801768
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.7728856991962519
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.8836143093962879
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.6,
+     "cost_per_1m_output": 2.449604752011318
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.7,
+     "cost_per_1m_output": 0.4650601628401516
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.6624734564539303
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.7573836937682469
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.7,
+     "cost_per_1m_output": 2.0996612160097015
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.8,
+     "cost_per_1m_output": 0.40692764248513263
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.5796642743971889
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.662710732047216
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.8,
+     "cost_per_1m_output": 1.8372035640084885
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.9,
+     "cost_per_1m_output": 0.36171345998678456
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.5152571327975013
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.589076206264192
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.9,
+     "cost_per_1m_output": 1.633069834674212
+    }
+   ]
+  },
+  {
+   "case": "Llama 3.3 70B on next-gen B200",
+   "gpu": "B200",
+   "benchmark": "NVIDIA TensorRT-LLM perf overview | Llama 3.3 70B Instruct (nvidia/Llama-3.3-70B-Instruct-FP4) | B200 180GB x1 FP4 | in 1000 / out 1000 | 6434.29 tok/s per GPU",
+   "benchmark_url": "https://nvidia.github.io/TensorRT-LLM/performance/perf-overview.html",
+   "tps_per_gpu": 6434.29,
+   "gpu_prices": {
+    "gpu_clouds": [
+     [
+      "Lambda",
+      6.69
+     ],
+     [
+      "CoreWeave",
+      8.6
+     ],
+     [
+      "RunPod",
+      6.79
+     ],
+     [
+      "Together AI",
+      8.19
+     ]
+    ],
+    "hyperscalers": [
+     [
+      "AWS",
+      14.2416
+     ]
+    ],
+    "small_clouds": [
+     [
+      "Vast.ai",
+      7.8135
+     ],
+     [
+      "Shadeform",
+      5.4094
+     ],
+     [
+      "Hyperstack",
+      6.0
+     ],
+     [
+      "Nebius",
+      8.5
+     ],
+     [
+      "Verda (DataCrunch)",
+      7.2
+     ],
+     [
+      "Massed Compute",
+      5.4325
+     ],
+     [
+      "Koyeb",
+      5.5
+     ],
+     [
+      "Modal",
+      6.2496
+     ]
+    ],
+    "small_cloud_median": 6.1248000000000005,
+    "gpu_cloud_median": 7.49,
+    "hyperscaler_median": 14.2416,
+    "cheapest": 5.4094
+   },
+   "tiers": {
+    "Cheapest on-demand": {
+     "usd_per_gpu_hour": 5.4094,
+     "cost_per_1m_output": 0.38921961115396597
+    },
+    "Small-cloud / marketplace median": {
+     "usd_per_gpu_hour": 6.1248000000000005,
+     "cost_per_1m_output": 0.4406943976033961
+    },
+    "GPU-cloud median": {
+     "usd_per_gpu_hour": 7.49,
+     "cost_per_1m_output": 0.538923889441196
+    },
+    "Hyperscaler median": {
+     "usd_per_gpu_hour": 14.2416,
+     "cost_per_1m_output": 1.0247180859633827
+    }
+   },
+   "hosts": [
+    {
+     "host": "DeepInfra",
+     "host_model": "Llama-3.3-70B-Instruct-Turbo",
+     "input_price": 0.1,
+     "output_price": 0.32,
+     "price": 0.00042,
+     "cost": 0.0005389238894411959,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": -0.283152117717133,
+     "breakeven_util": 0.7698912706302798,
+     "source_url": "https://deepinfra.com/pricing"
+    },
+    {
+     "host": "Amazon Bedrock",
+     "host_model": "Llama 3.3 Instruct (70B)",
+     "input_price": 0.72,
+     "output_price": 0.72,
+     "price": 0.00144,
+     "cost": 0.0005389238894411959,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.6257472989991695,
+     "breakeven_util": 0.22455162060049827,
+     "source_url": "https://aws.amazon.com/bedrock/pricing/"
+    },
+    {
+     "host": "Fireworks AI",
+     "host_model": "Size-based tier: >16B parameters (e.g. Llama 3.3 70B)",
+     "input_price": 0.9,
+     "output_price": 0.9,
+     "price": 0.0018,
+     "cost": 0.0005389238894411959,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.7005978391993356,
+     "breakeven_util": 0.17964129648039864,
+     "source_url": "https://docs.fireworks.ai/serverless/pricing"
+    },
+    {
+     "host": "Together AI",
+     "host_model": "Llama 3.3 70B",
+     "input_price": 1.04,
+     "output_price": 1.04,
+     "price": 0.00208,
+     "cost": 0.0005389238894411959,
+     "basis": "per request, 1000 in / 1000 out",
+     "gross_margin": 0.7409019762301943,
+     "breakeven_util": 0.15545881426188343,
+     "source_url": "https://www.together.ai/pricing"
+    }
+   ],
+   "sensitivity": [
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.3,
+     "cost_per_1m_output": 0.7784392223079319
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.8813887952067923
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.3,
+     "cost_per_1m_output": 1.077847778882392
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.3,
+     "cost_per_1m_output": 2.0494361719267653
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.4,
+     "cost_per_1m_output": 0.583829416730949
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.6610415964050943
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.8083858341617939
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.4,
+     "cost_per_1m_output": 1.537077128945074
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.5,
+     "cost_per_1m_output": 0.46706353338475914
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.5288332771240754
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.6467086673294351
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.5,
+     "cost_per_1m_output": 1.2296617031560593
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.6,
+     "cost_per_1m_output": 0.38921961115396597
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.4406943976033961
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.538923889441196
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.6,
+     "cost_per_1m_output": 1.0247180859633827
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.7,
+     "cost_per_1m_output": 0.3336168095605423
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.3777380550886253
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.461934762378168
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.8783297879686138
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.8,
+     "cost_per_1m_output": 0.2919147083654745
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.33052079820254715
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.40419291708089694
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.768538564472537
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.9,
+     "cost_per_1m_output": 0.25947974076931063
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.29379626506893075
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.35928259296079723
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.6831453906422551
+    }
+   ]
+  },
+  {
+   "case": "gpt-oss-120b (MoE)",
+   "gpu": "B200",
+   "benchmark": "MLPerf Inference v6.1 (CoreWeave B200 SXM 8xB200) | gpt-oss-120b - MoE | B200 SXM 180GB x8 FP4 | in n/a / out n/a | 11435.92 tok/s per GPU",
+   "benchmark_url": "https://raw.githubusercontent.com/mlcommons/inference_results_v6.1/main/summary.csv",
+   "tps_per_gpu": 11435.92,
+   "gpu_prices": {
+    "gpu_clouds": [
+     [
+      "Lambda",
+      6.69
+     ],
+     [
+      "CoreWeave",
+      8.6
+     ],
+     [
+      "RunPod",
+      6.79
+     ],
+     [
+      "Together AI",
+      8.19
+     ]
+    ],
+    "hyperscalers": [
+     [
+      "AWS",
+      14.2416
+     ]
+    ],
+    "small_clouds": [
+     [
+      "Vast.ai",
+      7.8135
+     ],
+     [
+      "Shadeform",
+      5.4094
+     ],
+     [
+      "Hyperstack",
+      6.0
+     ],
+     [
+      "Nebius",
+      8.5
+     ],
+     [
+      "Verda (DataCrunch)",
+      7.2
+     ],
+     [
+      "Massed Compute",
+      5.4325
+     ],
+     [
+      "Koyeb",
+      5.5
+     ],
+     [
+      "Modal",
+      6.2496
+     ]
+    ],
+    "small_cloud_median": 6.1248000000000005,
+    "gpu_cloud_median": 7.49,
+    "hyperscaler_median": 14.2416,
+    "cheapest": 5.4094
+   },
+   "tiers": {
+    "Cheapest on-demand": {
+     "usd_per_gpu_hour": 5.4094,
+     "cost_per_1m_output": 0.218989976482159
+    },
+    "Small-cloud / marketplace median": {
+     "usd_per_gpu_hour": 6.1248000000000005,
+     "cost_per_1m_output": 0.2479516781820401
+    },
+    "GPU-cloud median": {
+     "usd_per_gpu_hour": 7.49,
+     "cost_per_1m_output": 0.3032193817893613
+    },
+    "Hyperscaler median": {
+     "usd_per_gpu_hour": 14.2416,
+     "cost_per_1m_output": 0.5765459476223456
+    }
+   },
+   "hosts": [
+    {
+     "host": "Together AI",
+     "host_model": "gpt-oss-120B",
+     "input_price": 0.15,
+     "output_price": 0.6,
+     "price": 0.6,
+     "cost": 0.3032193817893613,
+     "basis": "per 1M output tokens vs output price only (input revenue ignored)",
+     "gross_margin": 0.49463436368439784,
+     "breakeven_util": 0.3032193817893613,
+     "source_url": "https://www.together.ai/pricing"
+    },
+    {
+     "host": "Fireworks AI",
+     "host_model": "OpenAI GPT OSS 120B",
+     "input_price": 0.15,
+     "output_price": 0.6,
+     "price": 0.6,
+     "cost": 0.3032193817893613,
+     "basis": "per 1M output tokens vs output price only (input revenue ignored)",
+     "gross_margin": 0.49463436368439784,
+     "breakeven_util": 0.3032193817893613,
+     "source_url": "https://docs.fireworks.ai/serverless/pricing"
+    },
+    {
+     "host": "Groq",
+     "host_model": "openai/gpt-oss-120b",
+     "input_price": 0.15,
+     "output_price": 0.6,
+     "price": 0.6,
+     "cost": 0.3032193817893613,
+     "basis": "per 1M output tokens vs output price only (input revenue ignored)",
+     "gross_margin": 0.49463436368439784,
+     "breakeven_util": 0.3032193817893613,
+     "source_url": "https://console.groq.com/docs/models"
+    },
+    {
+     "host": "Amazon Bedrock",
+     "host_model": "gpt-oss-120b",
+     "input_price": 0.15,
+     "output_price": 0.6,
+     "price": 0.6,
+     "cost": 0.3032193817893613,
+     "basis": "per 1M output tokens vs output price only (input revenue ignored)",
+     "gross_margin": 0.49463436368439784,
+     "breakeven_util": 0.3032193817893613,
+     "source_url": "https://aws.amazon.com/bedrock/pricing/"
+    }
+   ],
+   "sensitivity": [
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.3,
+     "cost_per_1m_output": 0.437979952964318
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.4959033563640802
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.3,
+     "cost_per_1m_output": 0.6064387635787226
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.3,
+     "cost_per_1m_output": 1.1530918952446911
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.4,
+     "cost_per_1m_output": 0.3284849647232385
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.3719275172730601
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.45482907268404194
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.4,
+     "cost_per_1m_output": 0.8648189214335182
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.5,
+     "cost_per_1m_output": 0.2627879717785908
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.2975420138184481
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.3638632581472336
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.5,
+     "cost_per_1m_output": 0.6918551371468146
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.6,
+     "cost_per_1m_output": 0.218989976482159
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.2479516781820401
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.3032193817893613
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.6,
+     "cost_per_1m_output": 0.5765459476223456
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.7,
+     "cost_per_1m_output": 0.18770569412756485
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.21253000987032006
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.259902327248024
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.7,
+     "cost_per_1m_output": 0.4941822408191533
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.8,
+     "cost_per_1m_output": 0.16424248236161926
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.18596375863653006
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.22741453634202097
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.8,
+     "cost_per_1m_output": 0.4324094607167591
+    },
+    {
+     "tier": "Cheapest on-demand",
+     "util": 0.9,
+     "cost_per_1m_output": 0.14599331765477266
+    },
+    {
+     "tier": "Small-cloud / marketplace median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.1653011187880267
+    },
+    {
+     "tier": "GPU-cloud median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.20214625452624085
+    },
+    {
+     "tier": "Hyperscaler median",
+     "util": 0.9,
+     "cost_per_1m_output": 0.3843639650815636
+    }
+   ]
+  }
+ ],
+ "closed_model_prices": [
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-astra",
+   "input": 10.0,
+   "output": 50.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "input": 2.0,
+   "output": 10.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-luna",
+   "input": 0.1,
+   "output": 0.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5",
+   "input": 5.0,
+   "output": 30.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.4-mini",
+   "input": 0.75,
+   "output": 4.5
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Fable 5.1",
+   "input": 10.0,
+   "output": 50.0
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Opus 5.5",
+   "input": 4.0,
+   "output": 20.0
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Sonnet 5.5",
+   "input": 2.0,
+   "output": 10.0
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Haiku 4.5",
+   "input": 1.0,
+   "output": 5.0
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.1 Pro Preview",
+   "input": 2.0,
+   "output": 12.0
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.8 Flash",
+   "input": 0.75,
+   "output": 3.75
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.5 Flash",
+   "input": 1.5,
+   "output": 9.0
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.5 Flash-Lite",
+   "input": 0.3,
+   "output": 2.5
+  }
+ ],
+ "market_offers": [
+  {
+   "model": "Llama 3.1 8B",
+   "provider": "DeepInfra",
+   "segment": "major independent host",
+   "quantization": "fp8",
+   "input_price": 0.02,
+   "output_price": 0.04,
+   "price": 6e-05,
+   "cost": 0.00010777626038685217,
+   "gross_margin": -0.796271006447536,
+   "breakeven_util": 1.0777626038685215
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "provider": "Novita",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.02,
+   "output_price": 0.05,
+   "price": 7e-05,
+   "cost": 0.00010777626038685217,
+   "gross_margin": -0.5396608626693169,
+   "breakeven_util": 0.92379651760159
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "provider": "Groq",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.05,
+   "output_price": 0.08,
+   "price": 0.00013,
+   "cost": 0.00010777626038685217,
+   "gross_margin": 0.17095184317806011,
+   "breakeven_util": 0.4974288940931638
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "provider": "Cloudflare",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "fp8",
+   "input_price": 0.152,
+   "output_price": 0.287,
+   "price": 0.000439,
+   "cost": 0.00010777626038685217,
+   "gross_margin": 0.7544959900071705,
+   "breakeven_util": 0.14730240599569772
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "provider": "CoreWeave",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "bf16",
+   "input_price": 0.22,
+   "output_price": 0.22,
+   "price": 0.00044,
+   "cost": 0.00010777626038685217,
+   "gross_margin": 0.7550539536662451,
+   "breakeven_util": 0.14696762780025294
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "DeepInfra",
+   "segment": "major independent host",
+   "quantization": "fp8",
+   "input_price": 0.1,
+   "output_price": 0.32,
+   "price": 0.00042,
+   "cost": 0.000772885699196252,
+   "gross_margin": -0.8402040457053617,
+   "breakeven_util": 1.104122427423217
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Novita",
+   "segment": "long-tail independent host",
+   "quantization": "bf16",
+   "input_price": 0.135,
+   "output_price": 0.4,
+   "price": 0.000535,
+   "cost": 0.000772885699196252,
+   "gross_margin": -0.44464616672196633,
+   "breakeven_util": 0.8667877000331797
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "AkashML",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.2,
+   "output_price": 0.52,
+   "price": 0.00072,
+   "cost": 0.000772885699196252,
+   "gross_margin": -0.07345235999479427,
+   "breakeven_util": 0.6440714159968766
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Parasail",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.22,
+   "output_price": 0.5,
+   "price": 0.00072,
+   "cost": 0.000772885699196252,
+   "gross_margin": -0.07345235999479427,
+   "breakeven_util": 0.6440714159968766
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Cloudflare",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "fp8",
+   "input_price": 0.293,
+   "output_price": 2.253,
+   "price": 0.002546,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.6964313828765704,
+   "breakeven_util": 0.1821411702740578
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "SambaNova",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.45,
+   "output_price": 0.9,
+   "price": 0.00135,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.42749207466944306,
+   "breakeven_util": 0.3435047551983342
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Groq",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.59,
+   "output_price": 0.79,
+   "price": 0.00138,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.43993789913315073,
+   "breakeven_util": 0.33603726052010957
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "CoreWeave",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "fp16",
+   "input_price": 0.71,
+   "output_price": 0.71,
+   "price": 0.00142,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.4557142963406676,
+   "breakeven_util": 0.32657142219559937
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Google",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "unknown",
+   "input_price": 0.72,
+   "output_price": 0.72,
+   "price": 0.00144,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.46327382000260287,
+   "breakeven_util": 0.3220357079984383
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "Together",
+   "segment": "major independent host",
+   "quantization": "unknown",
+   "input_price": 1.04,
+   "output_price": 1.04,
+   "price": 0.00208,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.6284203369248789,
+   "breakeven_util": 0.22294779784507268
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "CoreWeave",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "fp4",
+   "input_price": 0.03,
+   "output_price": 0.17,
+   "price": 0.17,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.45853928342376515,
+   "breakeven_util": 0.875123570054259
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "DekaLLM",
+   "segment": "long-tail independent host",
+   "quantization": "bf16",
+   "input_price": 0.03,
+   "output_price": 0.18,
+   "price": 0.18,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.377509323233556,
+   "breakeven_util": 0.8265055939401336
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "DeepInfra",
+   "segment": "major independent host",
+   "quantization": "bf16",
+   "input_price": 0.037,
+   "output_price": 0.17,
+   "price": 0.17,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.45853928342376515,
+   "breakeven_util": 0.875123570054259
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "AkashML",
+   "segment": "long-tail independent host",
+   "quantization": "bf16",
+   "input_price": 0.037,
+   "output_price": 0.187,
+   "price": 0.187,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.32594480311251384,
+   "breakeven_util": 0.7955668818675082
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Mancer 2",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.045,
+   "output_price": 0.25,
+   "price": 0.25,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.008193287271839655,
+   "breakeven_util": 0.5950840276368962
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Crusoe",
+   "segment": "long-tail independent host",
+   "quantization": "bf16",
+   "input_price": 0.05,
+   "output_price": 0.25,
+   "price": 0.25,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.008193287271839655,
+   "breakeven_util": 0.5950840276368962
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Novita",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.05,
+   "output_price": 0.25,
+   "price": 0.25,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.008193287271839655,
+   "breakeven_util": 0.5950840276368962
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "DigitalOcean",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "unknown",
+   "input_price": 0.06,
+   "output_price": 0.42,
+   "price": 0.42,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.4096388614713331,
+   "breakeven_util": 0.3542166831172001
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Google",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "unknown",
+   "input_price": 0.09,
+   "output_price": 0.36,
+   "price": 0.36,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.311245338383222,
+   "breakeven_util": 0.4132527969700668
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "BaseTen",
+   "segment": "major independent host",
+   "quantization": "fp4",
+   "input_price": 0.1,
+   "output_price": 0.5,
+   "price": 0.5,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5040966436359198,
+   "breakeven_util": 0.2975420138184481
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Parasail",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.1,
+   "output_price": 0.75,
+   "price": 0.75,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.6693977624239466,
+   "breakeven_util": 0.19836134254563206
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "SambaNova",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.14,
+   "output_price": 0.95,
+   "price": 0.95,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.7389982334925893,
+   "breakeven_util": 0.15660105990444637
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Amazon Bedrock",
+   "segment": "hyperscaler / big cloud",
+   "quantization": "unknown",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Nebius",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "DeepInfra",
+   "segment": "major independent host",
+   "quantization": "bf16",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "SiliconFlow",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Phala",
+   "segment": "long-tail independent host",
+   "quantization": "unknown",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Together",
+   "segment": "major independent host",
+   "quantization": "unknown",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Groq",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.15,
+   "output_price": 0.6,
+   "price": 0.6,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.5867472030299332,
+   "breakeven_util": 0.2479516781820401
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Mara",
+   "segment": "long-tail independent host",
+   "quantization": "unknown",
+   "input_price": 0.15,
+   "output_price": 0.75,
+   "price": 0.75,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.6693977624239466,
+   "breakeven_util": 0.19836134254563206
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Cerebras",
+   "segment": "custom chips",
+   "quantization": "fp16",
+   "input_price": 0.35,
+   "output_price": 0.75,
+   "price": 0.75,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.6693977624239466,
+   "breakeven_util": 0.19836134254563206
+  }
+ ],
+ "segment_summary": [
+  {
+   "model": "Llama 3.1 8B",
+   "segment": "hyperscaler / big cloud",
+   "offers": 2,
+   "median_output_price": 0.2535,
+   "min_output_price": 0.22,
+   "max_output_price": 0.287,
+   "median_gross_margin": 0.7547749718367078,
+   "offers_below_cost": 0
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "segment": "custom chips",
+   "offers": 1,
+   "median_output_price": 0.08,
+   "min_output_price": 0.08,
+   "max_output_price": 0.08,
+   "median_gross_margin": 0.17095184317806011,
+   "offers_below_cost": 0
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "segment": "major independent host",
+   "offers": 1,
+   "median_output_price": 0.04,
+   "min_output_price": 0.04,
+   "max_output_price": 0.04,
+   "median_gross_margin": -0.796271006447536,
+   "offers_below_cost": 1
+  },
+  {
+   "model": "Llama 3.1 8B",
+   "segment": "long-tail independent host",
+   "offers": 1,
+   "median_output_price": 0.05,
+   "min_output_price": 0.05,
+   "max_output_price": 0.05,
+   "median_gross_margin": -0.5396608626693169,
+   "offers_below_cost": 1
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "segment": "hyperscaler / big cloud",
+   "offers": 3,
+   "median_output_price": 0.72,
+   "min_output_price": 0.71,
+   "max_output_price": 2.253,
+   "median_gross_margin": 0.46327382000260287,
+   "offers_below_cost": 0
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "segment": "custom chips",
+   "offers": 2,
+   "median_output_price": 0.845,
+   "min_output_price": 0.79,
+   "max_output_price": 0.9,
+   "median_gross_margin": 0.4337149869012969,
+   "offers_below_cost": 0
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "segment": "major independent host",
+   "offers": 2,
+   "median_output_price": 0.68,
+   "min_output_price": 0.32,
+   "max_output_price": 1.04,
+   "median_gross_margin": -0.1058918543902414,
+   "offers_below_cost": 1
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "segment": "long-tail independent host",
+   "offers": 3,
+   "median_output_price": 0.5,
+   "min_output_price": 0.4,
+   "max_output_price": 0.52,
+   "median_gross_margin": -0.07345235999479427,
+   "offers_below_cost": 3
+  },
+  {
+   "model": "gpt-oss-120b",
+   "segment": "hyperscaler / big cloud",
+   "offers": 4,
+   "median_output_price": 0.39,
+   "min_output_price": 0.17,
+   "max_output_price": 0.6,
+   "median_gross_margin": 0.36044209992727755,
+   "offers_below_cost": 1
+  },
+  {
+   "model": "gpt-oss-120b",
+   "segment": "custom chips",
+   "offers": 3,
+   "median_output_price": 0.75,
+   "min_output_price": 0.6,
+   "max_output_price": 0.95,
+   "median_gross_margin": 0.6693977624239466,
+   "offers_below_cost": 0
+  },
+  {
+   "model": "gpt-oss-120b",
+   "segment": "major independent host",
+   "offers": 4,
+   "median_output_price": 0.55,
+   "min_output_price": 0.17,
+   "max_output_price": 0.6,
+   "median_gross_margin": 0.5454219233329265,
+   "offers_below_cost": 1
+  },
+  {
+   "model": "gpt-oss-120b",
+   "segment": "long-tail independent host",
+   "offers": 10,
+   "median_output_price": 0.425,
+   "min_output_price": 0.18,
+   "max_output_price": 0.75,
+   "median_gross_margin": 0.29747024515088644,
+   "offers_below_cost": 2
+  }
+ ]
+}

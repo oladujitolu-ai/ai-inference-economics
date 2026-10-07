@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Inference Economics | Tolu Oladuji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#ffffff;--ink:#1b2233;--muted:#5a6475;--line:#dfe3ea;--accent:#2f6fb1;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--bg:#11151c;--card:#1a202b;--ink:#e7ebf2;--muted:#9aa6b8;--line:#2b3442;--accent:#6ea6e6;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding-block:40px 64px;padding-inline:18px}
+h1{font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.2;margin:0;text-wrap:balance}p.by{color:var(--muted);margin:.3rem 0 1.2rem}.lede{max-width:68ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:24px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.kpi b{display:block;font:500 1.45rem "IBM Plex Mono",ui-monospace,monospace;color:var(--accent)}.kpi span{color:var(--muted);font-size:.9rem}
+h2{margin-top:40px;font-size:1.3rem;text-wrap:balance}ol.find{padding-left:1.2rem;max-width:75ch}ol.find li{margin:0 0 14px}ol.find h3{display:inline;font-size:1rem;margin:0}ol.find p{display:inline;margin:0}
+.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px;margin:16px 0;overflow-x:auto}.chart svg{max-width:100%;height:auto}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin:12px 0}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-weight:600}
+.auto{background:var(--card);border-left:4px solid var(--accent);border-radius:6px;padding:12px 16px;max-width:75ch}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}a{color:var(--accent)}footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+</style></head><body><div class="wrap">
+<header><h1>AI inference economics: what it costs to serve an open LLM, and what hosts earn</h1>
+<p class="by">Tolu Oladuji &middot; October 2026 &middot; <a href="https://www.linkedin.com/in/oladuji-tolulope/">LinkedIn</a> &middot; <a href="https://github.com/oladujitolu-ai/ai-inference-economics">Code and data</a></p></header>
+<p class="lede">{{LEDE}} All inputs are public and cited.</p>
+<div class="kpis">
+<div class="kpi"><b>{{K1}}</b><span>per 1M output tokens to serve Llama 3.3 70B on a rented H100 ({{U}}% utilisation)</span></div>
+<div class="kpi"><b>{{K2}}</b><span>H100 per hour: small clouds &amp; marketplaces vs hyperscalers (median)</span></div>
+<div class="kpi"><b>{{K3}}</b><span>implied compute gross margin at the major hosts' 70B list prices</span></div>
+<div class="kpi"><b>{{K4}}</b><span>price spread across 21 gpt-oss-120b offers</span></div></div>
+<h2>Key findings</h2><ol class="find">{{CARDS}}</ol>
+<div class="chart">{{SVG1}}</div><div class="chart">{{SVG2}}</div>
+<h2>The whole market: big and small providers</h2><p>Every offer on OpenRouter for the same three models, costed on small-cloud / marketplace GPUs (the cheapest realistic rented capacity) at {{U}}% utilisation.</p>
+<div class="tbl"><table><thead><tr><th>Model</th><th>Segment</th><th>Offers</th><th>Median $/1M out</th><th>Range</th><th>Median implied margin</th><th>Below cost</th></tr></thead><tbody>{{SEGROWS}}</tbody></table></div>
+<h2>Implied margins at the major hosts' list prices</h2><p>GPU-cloud median rate, {{U}}% utilisation. Requests of 1,000 input + 1,000 output tokens, except gpt-oss-120b (output only).</p>
+<div class="tbl"><table><thead><tr><th>Model</th><th>Host</th><th>Host's model</th><th>List $/1M (in / out)</th><th>Gross margin</th><th>Break-even util.</th></tr></thead><tbody>{{ROWS}}</tbody></table></div>
+<h2>How it stays current</h2><p class="auto">{{AUTOMATION}}</p>
+<h2>Method</h2><p>Serving cost per request = GPU $/hour &divide; (output tokens/sec per GPU &times; 3,600 &times; utilisation) &times; output tokens. List price per request = input tokens &times; input price + output tokens &times; output price. Implied gross margin = 1 &minus; cost &divide; price.</p>
+<h2>Limitations</h2><ul>{{LIM}}</ul>
+<footer>Model, data, sources and the weekly refresh: <a href="https://github.com/oladujitolu-ai/ai-inference-economics">github.com/oladujitolu-ai/ai-inference-economics</a>.</footer>
+</div></body></html>
