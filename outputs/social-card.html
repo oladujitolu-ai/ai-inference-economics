@@ -1,20 +1,22 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
 html,body{margin:0}
-body{width:1200px;height:627px;background:#F3F1EC;font-family:Georgia,'Times New Roman',serif;color:#1F1E1B;box-sizing:border-box;padding:64px 84px;position:relative}
-.frame{position:absolute;inset:22px;border:1px solid #CFC8BB}
-.k{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:17px;letter-spacing:.22em;text-transform:uppercase;color:#8A7356;margin:6px 0 26px}
-h1{font-weight:400;font-size:60px;line-height:1.12;margin:0 0 40px;letter-spacing:-.01em;max-width:960px}
-.rule{width:72px;height:2px;background:#8A7356;margin:0 0 34px}
-.row{display:flex;font-family:'Segoe UI',Helvetica,Arial,sans-serif}
-.s{padding:0 44px;border-left:1px solid #CFC8BB}.s:first-child{padding-left:0;border-left:0}
-.s b{display:block;font-family:Cambria,"Times New Roman",serif;font-weight:400;font-size:44px;color:#2E3B33;margin-bottom:6px}
-.s span{font-size:17px;color:#5E5A52;letter-spacing:.01em}
-.f{position:absolute;left:84px;bottom:58px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:17px;color:#5E5A52;letter-spacing:.04em}
-.f em{font-style:normal;color:#8A7356}</style></head><body><div class="frame"></div>
-<div class="k">AI Inference Economics &nbsp;&middot;&nbsp; Live Price Tracker</div>
+body{width:1200px;height:627px;display:flex;font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:#F3F1EC;color:#1F1E1B;overflow:hidden}
+.l{width:640px;padding:58px 56px 50px 64px;box-sizing:border-box;display:flex;flex-direction:column}
+.r{flex:1;background:url('datacenter-photo.jpg') center 58%/cover no-repeat;position:relative}
+.r:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(243,241,236,.35),rgba(243,241,236,0) 22%)}
+.k{font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:#8A7356;margin-bottom:22px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:50px;line-height:1.1;margin:0 0 26px;letter-spacing:-.01em}
+.rule{width:60px;height:2px;background:#8A7356;margin-bottom:28px}
+.row{display:flex;flex-direction:column;gap:16px}
+.s{display:flex;align-items:baseline;gap:16px}
+.s b{font-family:Cambria,'Times New Roman',serif;font-weight:400;font-size:34px;color:#2E3B33;min-width:150px}
+.s span{font-size:16px;color:#5E5A52}
+.f{margin-top:auto;font-size:15px;color:#5E5A52;letter-spacing:.04em}.f em{font-style:normal;color:#8A7356}
+</style></head><body><div class="l">
+<div class="k">AI Inference Economics</div>
 <h1>What it really costs to serve an open AI model</h1>
 <div class="rule"></div>
-<div class="row"><div class="s"><b>$0.88</b><span>per 1M tokens &middot; Llama 70B on H100</span></div>
+<div class="row"><div class="s"><b>$0.88</b><span>per 1M tokens, Llama 70B on H100</span></div>
 <div class="s"><b>5.6&times;</b><span>price spread for the same model</span></div>
 <div class="s"><b>25&ndash;37%</b><span>GPU utilisation to break even</span></div></div>
-<div class="f">Tolu Oladuji &nbsp;<em>&middot;</em>&nbsp; updated weekly</div></body></html>
+<div class="f">Tolu Oladuji &nbsp;<em>&middot;</em>&nbsp; live tracker, updated weekly</div></div><div class="r"></div></body></html>

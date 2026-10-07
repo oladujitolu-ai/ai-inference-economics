@@ -119,7 +119,7 @@ README += ["", "## How it stays current", "", AUTOMATION, "", "## Method", "",
            "## Repository", "", "- `data/`: input tables, live-price snapshots, price-change log and `SOURCES.md`",
            "- `refresh.py`: the weekly refresh pipeline; `.github/workflows/refresh.yml`: the schedule",
            "- `model.py`: the model; `build_site.py`: builds this README and the web page from the results",
-           "- `outputs/`: Excel model, results and charts", ""]
+           "- `outputs/`: Excel model, results and charts", "", "Preview-card photo: data center via [Unsplash](https://unsplash.com/photos/1784652852605) (Unsplash License).", ""]
 open(os.path.join(HERE, "README.md"), "w", encoding="utf-8", newline="\n").write("\n".join(README))
 
 svg1 = open(os.path.join(HERE, "outputs", "gross_margin_by_host.svg"), encoding="utf-8").read()

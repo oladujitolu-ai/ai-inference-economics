@@ -95,3 +95,5 @@ python model.py       # or just re-run the model on the saved data
 - `refresh.py`: the weekly refresh pipeline; `.github/workflows/refresh.yml`: the schedule
 - `model.py`: the model; `build_site.py`: builds this README and the web page from the results
 - `outputs/`: Excel model, results and charts
+
+Preview-card photo: data center via [Unsplash](https://unsplash.com/photos/1784652852605) (Unsplash License).
