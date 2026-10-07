@@ -33,7 +33,7 @@ h1{font-family:'Inter Tight',Inter,sans-serif;font-weight:700;font-size:40px;lin
 .lab{font-size:21px;color:%s}
 </style></head><body><div class="top">"""
 
-SRC = "Source: public GPU and API prices; NVIDIA and MLPerf benchmarks. 6 Oct 2026."
+SRC = "*1M tokens = roughly 750,000 words. Sources: public chip and AI prices, NVIDIA, MLPerf."
 
 
 def page(h, body, src=SRC):
@@ -62,23 +62,23 @@ def hbar(pct, color, label="", h=34):
 g = R["gpu"]["H100"]
 tiers = [("Small clouds and marketplaces", g["small_cloud_median"], c70["tiers"]["Small-cloud / marketplace median"]["cost_per_1m_output"], MID),
          ("Larger GPU clouds", g["gpu_cloud_median"], c70["tiers"]["GPU-cloud median"]["cost_per_1m_output"], MID),
-         ("AWS, Google Cloud, Azure", g["hyperscaler_median"], c70["tiers"]["Hyperscaler median"]["cost_per_1m_output"], AMBER)]
+         ("AWS, Google Cloud, Microsoft Azure", g["hyperscaler_median"], c70["tiers"]["Hyperscaler median"]["cost_per_1m_output"], AMBER)]
 mx = max(t[1] for t in tiers) * 1.18
 head = ('<div style="display:grid;grid-template-columns:1fr 210px;gap:24px;font-size:16px;font-weight:600;color:%s;margin-bottom:4px">'
-        '<div>H100 rental, $ per hour (median)</div><div style="text-align:right">Cost per 1M tokens</div></div>' % MUTED)
+        '<div>Rent per hour (typical price)</div><div style="text-align:right">Cost per 1M tokens*</div></div>' % MUTED)
 rows = "".join("""<div style="display:grid;grid-template-columns:1fr 210px;gap:24px;align-items:end;padding:14px 0;border-bottom:1px solid %s">
 <div><div class="lab" style="margin-bottom:8px;font-weight:500;color:%s">%s</div>%s</div>
 <div class="mono" style="text-align:right;font-size:30px;font-weight:600;color:%s;line-height:34px">$%.2f</div></div>""" % (
     GRID, INK, n, hbar(100 * v / mx, col, "$%.2f" % v), AMBER if col == AMBER else INK, c) for n, v, c, col in tiers)
 render("01-same-gpu-three-prices", page(620, """<h1>Same chip, three very different prices</h1>
-<p class="sub">Renting an NVIDIA H100, and what that does to the cost of serving Llama 3.3 70B at 60%% utilisation</p>%s%s""" % (head, rows)), 620)
+<p class="sub">What it costs to rent NVIDIA's H100 chip for an hour, and what that does to the cost of an AI answer</p>%s%s""" % (head, rows)), 620)
 
 # 2. Margins at list price ---------------------------------------------------------------------------------------
 hosts = ["Together AI", "Fireworks AI", "Amazon Bedrock"]
 def host(case, h): return next(x for x in case["hosts"] if x["host"] == h)
 legend = ('<div style="display:flex;gap:28px;font-size:18px;color:%s;margin-bottom:18px">'
-          '<span style="display:inline-flex;align-items:center;gap:8px"><i style="width:14px;height:14px;background:%s;display:inline-block"></i>Llama 3.1 8B</span>'
-          '<span style="display:inline-flex;align-items:center;gap:8px"><i style="width:14px;height:14px;background:%s;display:inline-block"></i>Llama 3.3 70B</span></div>' % (BODY, LIGHT, AMBER))
+          '<span style="display:inline-flex;align-items:center;gap:8px"><i style="width:14px;height:14px;background:%s;display:inline-block"></i>Small model (Llama 3.1 8B)</span>'
+          '<span style="display:inline-flex;align-items:center;gap:8px"><i style="width:14px;height:14px;background:%s;display:inline-block"></i>Bigger model (Llama 3.3 70B)</span></div>' % (BODY, LIGHT, AMBER))
 bars = ""
 for hname in hosts:
     a, b = host(c8, hname)["gross_margin"] * 100, host(c70, hname)["gross_margin"] * 100
@@ -86,17 +86,17 @@ for hname in hosts:
 <div class="lab" style="font-weight:500;color:%s">%s</div><div style="display:flex;flex-direction:column;gap:6px">%s%s</div></div>""" % (
         GRID, INK, hname, hbar(a, LIGHT, "%.0f%%" % a, 26), hbar(b, AMBER, "%.0f%%" % b, 26))
 be = [host(c70, h)["breakeven_util"] * 100 for h in hosts]
-render("02-margins-at-list-price", page(620, """<h1>At list prices, the margins are healthy</h1>
-<p class="sub">Implied compute gross margin if a host rents H100s at the median GPU-cloud rate and keeps them 60%% busy</p>%s
+render("02-margins-at-list-price", page(620, """<h1>Keep the chips busy and the business works</h1>
+<p class="sub">Share of every dollar a company keeps after paying for the chips, at its public price, with the chips busy 60%% of the time</p>%s
 <div style="display:grid;grid-template-columns:1fr 200px;gap:34px">
 <div>%s</div>
 <div style="border-left:3px solid %s;padding-left:18px;align-self:start"><div class="mono" style="font-size:40px;font-weight:600;line-height:1;color:%s">%.0f&ndash;%.0f%%</div>
-<div style="font-size:18px;line-height:1.35;color:%s;margin-top:10px">utilisation needed to break even on Llama 3.3 70B</div></div></div>""" % (
+<div style="font-size:18px;line-height:1.35;color:%s;margin-top:10px">how busy the chips must be just to break even on the bigger model</div></div></div>""" % (
     legend, bars, AMBER, INK, min(be), max(be), BODY)), 620)
 
 # 3. One model, 21 prices ----------------------------------------------------------------------------------------
 SEGCOL = {"hyperscaler / big cloud": DARK, "custom chips": AMBER, "major independent host": MID, "long-tail independent host": LIGHT}
-SEGLAB = {"hyperscaler / big cloud": "Big clouds", "custom chips": "Custom-chip companies", "major independent host": "Major independent hosts", "long-tail independent host": "Smaller independent hosts"}
+SEGLAB = {"hyperscaler / big cloud": "Big clouds", "custom chips": "Custom-chip companies", "major independent host": "Larger independent companies", "long-tail independent host": "Smaller companies"}
 oss = sorted([x for x in R["market_offers"] if x["model"] == "gpt-oss-120b"], key=lambda x: x["output_price"])
 lo, hi = 0.0, 1.0
 dots, placed = "", []
@@ -112,8 +112,8 @@ ticks = "".join('<div style="position:absolute;left:%d%%;top:0;bottom:0;border-l
     t, GRID, t, MUTED, t / 100) for t in (0, 25, 50, 75, 100))
 legend = "".join('<span style="display:inline-flex;align-items:center;gap:8px;font-size:18px;color:%s"><i style="width:14px;height:14px;border-radius:50%%;background:%s;display:inline-block"></i>%s</span>' % (BODY, SEGCOL[k], SEGLAB[k]) for k in SEGCOL)
 mn, mxp = oss[0]["output_price"], oss[-1]["output_price"]
-render("03-one-model-21-prices", page(640, """<h1>One model, %d different prices</h1>
-<p class="sub">Price per 1M output tokens for gpt-oss-120b, every provider offer listed on OpenRouter. The most expensive is <b style="color:%s">%.1fx</b> the cheapest.</p>
+render("03-one-model-21-prices", page(640, """<h1>Same model, %d different prices</h1>
+<p class="sub">What each company charges per 1M tokens* for gpt-oss-120b, a free-to-use OpenAI model. The most expensive is <b style="color:%s">%.1f times</b> the cheapest.</p>
 <div style="display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:26px">%s</div>
 <div style="position:relative;height:230px;margin:0 14px 0;border-bottom:1px solid %s">%s%s</div>""" % (
     len(oss), INK, mxp / mn, legend, INK, ticks, dots)), 640)
@@ -128,19 +128,19 @@ def group(title, rows, mxv):
             BODY, name, hbar(100 * v / mxv, col, "$%.2f" % v, 30))
     return out + "</div>"
 render("04-newer-chips-cheaper-tokens", page(600, """<h1>A pricier chip, %.0f%% cheaper tokens</h1>
-<p class="sub">The B200 rents for more per hour but serves far more tokens, so each token of Llama 3.3 70B costs less</p>%s%s""" % (
+<p class="sub">NVIDIA's newer B200 costs more to rent, but it works so much faster that each answer costs less</p>%s%s""" % (
     drop,
     group("Rent per hour", [("NVIDIA H100", h1c["usd_per_gpu_hour"], LIGHT), ("NVIDIA B200", b2c["usd_per_gpu_hour"], LIGHT)], b2c["usd_per_gpu_hour"] * 1.2),
-    group("Cost to serve 1M tokens of Llama 3.3 70B", [("NVIDIA H100 (FP8)", h1c["cost_per_1m_output"], DARK), ("NVIDIA B200 (FP4)", b2c["cost_per_1m_output"], AMBER)], h1c["cost_per_1m_output"] * 1.2))), 600)
+    group("Cost per 1M tokens* (Llama 3.3 70B)", [("NVIDIA H100", h1c["cost_per_1m_output"], DARK), ("NVIDIA B200", b2c["cost_per_1m_output"], AMBER)], h1c["cost_per_1m_output"] * 1.2))), 600)
 
 # 5. How the tracker updates itself ------------------------------------------------------------------------------
-steps = [("Every Monday", "GitHub Actions starts the run on a schedule"), ("Fetch", "Live prices pulled from a public data feed"),
+steps = [("Monday", "The run starts on its own"), ("Fetch", "Live prices pulled from a public data feed"),
          ("Snapshot", "A dated copy of every price is saved"), ("Compare", "Every price change against last week is logged"),
          ("Rebuild", "Model, Excel file, charts and web page")]
 cells = "".join("""<div style="border-top:3px solid %s;padding-top:14px"><div class="mono" style="font-size:18px;font-weight:600;color:%s">%02d</div>
 <div style="font-family:'Inter Tight',Inter,sans-serif;font-size:23px;font-weight:700;margin:6px 0 6px;color:%s">%s</div><div style="font-size:17px;line-height:1.35;color:%s">%s</div></div>""" % (
     AMBER if i == 0 else INK, AMBER if i == 0 else MUTED, i + 1, INK, a, BODY, b) for i, (a, b) in enumerate(steps))
-render("05-how-it-updates-itself", page(480, """<h1>The tracker updates itself every week</h1>
-<p class="sub">No manual steps: the whole pipeline runs on a schedule and leaves a dated record of every price</p>
+render("05-how-it-updates-itself", page(480, """<h1>It updates itself every Monday</h1>
+<p class="sub">Nobody has to touch it: it fetches new prices, keeps a dated record and rebuilds everything on its own</p>
 <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:18px">%s</div>""" % cells,
     "github.com/oladujitolu-ai/ai-inference-economics"), 480)
