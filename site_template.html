@@ -22,6 +22,7 @@ h1{font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.2;margin:0;text-wrap:balan
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.kpi b{display:block;font:500 1.45rem "IBM Plex Mono",ui-monospace,monospace;color:var(--accent)}.kpi span{color:var(--muted);font-size:.9rem}
 h2{margin-top:40px;font-size:1.3rem;text-wrap:balance}ol.find{padding-left:1.2rem;max-width:75ch}ol.find li{margin:0 0 14px}ol.find h3{display:inline;font-size:1rem;margin:0}ol.find p{display:inline;margin:0}
 .chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px;margin:16px 0;overflow-x:auto}.chart svg{max-width:100%;height:auto}
+.fig{margin:18px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#F2EFE9}.fig img{display:block;width:100%;height:auto}
 .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin:12px 0}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-weight:600}
 .auto{background:var(--card);border-left:4px solid var(--accent);border-radius:6px;padding:12px 16px;max-width:75ch}
@@ -36,12 +37,12 @@ code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}a{color:v
 <div class="kpi"><b>{{K3}}</b><span>implied compute gross margin at the major hosts' 70B list prices</span></div>
 <div class="kpi"><b>{{K4}}</b><span>price spread across 21 gpt-oss-120b offers</span></div></div>
 <h2>Key findings</h2><ol class="find">{{CARDS}}</ol>
-<div class="chart">{{SVG1}}</div><div class="chart">{{SVG2}}</div>
+<figure class="fig"><img src="outputs/charts/01-same-gpu-three-prices.png" alt="Same GPU, three very different prices: H100 median hourly price by provider type and the resulting cost per 1M tokens for Llama 3.3 70B" loading="lazy"></figure><figure class="fig"><img src="outputs/charts/02-margins-at-list-price.png" alt="Implied gross margin at list price by host for Llama 3.1 8B and Llama 3.3 70B" loading="lazy"></figure><figure class="fig"><img src="outputs/charts/04-newer-chips-cheaper-tokens.png" alt="H100 versus B200 cost per 1M tokens for Llama 3.3 70B" loading="lazy"></figure><figure class="fig"><img src="outputs/charts/03-one-model-21-prices.png" alt="gpt-oss-120b output price across 21 provider offers" loading="lazy"></figure>
 <h2>The whole market: big and small providers</h2><p>Every offer on OpenRouter for the same three models, costed on small-cloud / marketplace GPUs (the cheapest realistic rented capacity) at {{U}}% utilisation.</p>
 <div class="tbl"><table><thead><tr><th>Model</th><th>Segment</th><th>Offers</th><th>Median $/1M out</th><th>Range</th><th>Median implied margin</th><th>Below cost</th></tr></thead><tbody>{{SEGROWS}}</tbody></table></div>
 <h2>Implied margins at the major hosts' list prices</h2><p>GPU-cloud median rate, {{U}}% utilisation. Requests of 1,000 input + 1,000 output tokens, except gpt-oss-120b (output only).</p>
 <div class="tbl"><table><thead><tr><th>Model</th><th>Host</th><th>Host's model</th><th>List $/1M (in / out)</th><th>Gross margin</th><th>Break-even util.</th></tr></thead><tbody>{{ROWS}}</tbody></table></div>
-<h2>How it stays current</h2><p class="auto">{{AUTOMATION}}</p>
+<h2>How it stays current</h2><p class="auto">{{AUTOMATION}}</p><figure class="fig"><img src="outputs/charts/05-how-it-updates-itself.png" alt="The weekly automated refresh pipeline in five steps" loading="lazy"></figure>
 <h2>Method</h2><p>Serving cost per request = GPU $/hour &divide; (output tokens/sec per GPU &times; 3,600 &times; utilisation) &times; output tokens. List price per request = input tokens &times; input price + output tokens &times; output price. Implied gross margin = 1 &minus; cost &divide; price.</p>
 <h2>Limitations</h2><ul>{{LIM}}</ul>
 <footer>Model, data, sources and the weekly refresh: <a href="https://github.com/oladujitolu-ai/ai-inference-economics">github.com/oladujitolu-ai/ai-inference-economics</a>.</footer>

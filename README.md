@@ -15,9 +15,13 @@ A fully sourced, self-updating model of LLM inference unit economics. It combine
 7. **Some prices sit below rented-GPU cost.** DeepInfra's Llama 3.3 70B Turbo price would need 126% utilisation of rented H100s to break even, which is impossible. That points to owned or contracted capacity, more aggressive optimisation (the Turbo variants are not defined on the pricing page), or market-share pricing.
 8. **Closed models price on value, not cost.** Published prices for OpenAI, Anthropic and Google models span $0.10-$10 per million input tokens and $0.50-$50 per million output tokens, a 100x spread at the output price.
 
-![Implied gross margin by host](outputs/gross_margin_by_host.svg)
+![Same GPU, three very different prices](outputs/charts/01-same-gpu-three-prices.png)
 
-![Llama 3.3 70B cost per 1M tokens](outputs/cost_per_1m_tokens_70b.svg)
+![Healthy margins, low break-even](outputs/charts/02-margins-at-list-price.png)
+
+![Pricier chip, cheaper tokens](outputs/charts/04-newer-chips-cheaper-tokens.png)
+
+![One model, 21 prices](outputs/charts/03-one-model-21-prices.png)
 
 ## The whole market: big and small providers
 
@@ -64,6 +68,8 @@ GPU-cloud median rate, 60% utilisation. Requests of 1,000 input + 1,000 output t
 ## How it stays current
 
 The project updates itself. One command (`python refresh.py`) pulls live per-provider prices from OpenRouter's public API, saves a dated snapshot, logs every price change against the previous run, then re-runs the model and rebuilds the Excel file, charts, this README and the web page. A GitHub Actions workflow runs it every Monday, so the numbers here stay current without manual work. Sources without a public feed (NVIDIA benchmark tables and some GPU price pages) stay as dated, cited inputs.
+
+![A tracker that updates itself](outputs/charts/05-how-it-updates-itself.png)
 
 ## Method
 

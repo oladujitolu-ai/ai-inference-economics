@@ -102,14 +102,14 @@ README = ["# AI inference economics: what it costs to serve an open LLM, and wha
           "**Tolu Oladuji** | October 2026 | [LinkedIn](https://www.linkedin.com/in/oladuji-tolulope/) | [Web version](https://oladujitolu-ai.github.io/ai-inference-economics/)", "",
           LEDE + " Every input is public and cited; see [`data/SOURCES.md`](data/SOURCES.md).", "", "## Key findings", ""]
 README += ["%d. **%s** %s" % (i, t, b) for i, (t, b) in enumerate(FINDINGS, 1)]
-README += ["", "![Implied gross margin by host](outputs/gross_margin_by_host.svg)", "", "![Llama 3.3 70B cost per 1M tokens](outputs/cost_per_1m_tokens_70b.svg)", "",
+README += ["", "![Same GPU, three very different prices](outputs/charts/01-same-gpu-three-prices.png)", "", "![Healthy margins, low break-even](outputs/charts/02-margins-at-list-price.png)", "", "![Pricier chip, cheaper tokens](outputs/charts/04-newer-chips-cheaper-tokens.png)", "", "![One model, 21 prices](outputs/charts/03-one-model-21-prices.png)", "",
            "## The whole market: big and small providers", "", "Every offer on OpenRouter for the same three models, costed on small-cloud / marketplace GPUs (the cheapest realistic rented capacity) at %d%% utilisation." % U, "",
            "| Model | Segment | Offers | Median $/1M out | Range | Median implied margin | Offers below cost |", "|---|---|---|---|---|---|---|"]
 README += ["| %s |" % " | ".join(r) for r in SEGROWS]
 README += ["", "## Implied margins at the major hosts' list prices", "", "GPU-cloud median rate, %d%% utilisation. Requests of 1,000 input + 1,000 output tokens, except gpt-oss-120b (output only)." % U, "",
            "| Model | Host | Host's model | List price $/1M (in / out) | Implied gross margin | Break-even utilisation |", "|---|---|---|---|---|---|"]
 README += ["| %s |" % " | ".join(r) for r in ROWS]
-README += ["", "## How it stays current", "", AUTOMATION, "", "## Method", "",
+README += ["", "## How it stays current", "", AUTOMATION, "", "![A tracker that updates itself](outputs/charts/05-how-it-updates-itself.png)", "", "## Method", "",
            "- **Serving cost per request** = GPU $/hour / (output tokens per second per GPU x 3,600 x utilisation) x output tokens",
            "- **List price per request** = input tokens x input price + output tokens x output price",
            "- **Implied gross margin** = 1 - serving cost / list price; **break-even utilisation** = utilisation at which cost equals price",

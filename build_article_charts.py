@@ -9,7 +9,9 @@ os.makedirs(OUT, exist_ok=True)
 R = json.load(open(os.path.join(HERE, "outputs", "results.json"), encoding="utf-8"))
 C = {c["case"]: c for c in R["cases"]}
 c8, c70, cB = C["Llama 3.1 8B"], C["Llama 3.3 70B"], C["Llama 3.3 70B on next-gen B200"]
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+import shutil, tempfile
+CHROME = os.environ.get("CHROME") or shutil.which("google-chrome") or shutil.which("chromium") or shutil.which("chromium-browser")     or r"C:\Program Files\Google\Chrome\Application\chrome.exe"   # Windows locally, google-chrome on the GitHub runner
+PROFILE = tempfile.mkdtemp(prefix="chart-render-")
 INK, MUTED, BRONZE, SAGE, SLATE, STONE, LINE = "#191816", "#5E5A52", "#8A6F4E", "#5F7A68", "#7C8794", "#F2EFE9", "rgba(25,24,22,.14)"
 
 HEAD = """<!doctype html><html><head><meta charset="utf-8">
@@ -31,9 +33,9 @@ def render(name, html, h):
     p = os.path.join(OUT, name + ".html")
     open(p, "w", encoding="utf-8").write(html)
     png = os.path.join(OUT, name + ".png")
-    subprocess.run([CHROME, "--headless", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2",
+    subprocess.run([CHROME, "--headless=new", "--no-sandbox", "--user-data-dir=" + PROFILE, "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2",
                     "--virtual-time-budget=8000", "--window-size=1200,%d" % h, "--screenshot=" + png,
-                    "file:///" + p.replace("\\", "/").replace(" ", "%20")], capture_output=True)
+                    ("file:///" + p.replace("\\", "/").lstrip("/")).replace(" ", "%20")], capture_output=True)
     print("rendered", png)
 
 

@@ -6,7 +6,7 @@
   1. FETCH     live per-provider prices from OpenRouter's public API for every model in MODELS
   2. SNAPSHOT  saves the raw responses under data/snapshots/<date>/ (an audit trail of every run)
   3. CHANGES   compares each provider's price with the previous snapshot and appends any move to data/price_changes.csv
-  4. REBUILD   regenerates data/openrouter_prices.csv, re-runs model.py and build_site.py (Excel, charts, README, web page)
+  4. REBUILD   regenerates data/openrouter_prices.csv, re-runs model.py, build_article_charts.py and build_site.py (Excel, charts, README, web page)
   5. LOG       appends a one-line summary to data/refresh_log.csv
 
 Runs weekly on GitHub Actions (.github/workflows/refresh.yml) and can be run by hand at any time.
@@ -70,7 +70,7 @@ def main():
         if new_file:
             w.writerow(["date", "model", "provider", "quantization", "old_input", "old_output", "new_input", "new_output", "event"])
         w.writerows(changes)
-    for script in (os.path.join(DATA, "openrouter_to_csv.py"), os.path.join(HERE, "model.py"), os.path.join(HERE, "build_site.py")):
+    for script in (os.path.join(DATA, "openrouter_to_csv.py"), os.path.join(HERE, "model.py"), os.path.join(HERE, "build_article_charts.py"), os.path.join(HERE, "build_site.py")):
         subprocess.run([sys.executable, script], check=True, cwd=os.path.dirname(script), stdout=subprocess.DEVNULL)
     log = os.path.join(DATA, "refresh_log.csv")
     new_log = not os.path.exists(log)
