@@ -11,22 +11,23 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://oladujitolu-ai.github.io/ai-inference-economics/outputs/cover-final.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f7f9;--card:#ffffff;--ink:#1b2233;--muted:#5a6475;--line:#dfe3ea;--accent:#2f6fb1;color-scheme:light}
-@media (prefers-color-scheme: dark){:root{--bg:#11151c;--card:#1a202b;--ink:#e7ebf2;--muted:#9aa6b8;--line:#2b3442;--accent:#6ea6e6;color-scheme:dark}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:980px;margin:0 auto;padding-block:40px 64px;padding-inline:18px}
-h1{font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.2;margin:0;text-wrap:balance}p.by{color:var(--muted);margin:.3rem 0 1.2rem}.lede{max-width:68ch}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:24px 0}
-.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.kpi b{display:block;font:500 1.45rem "IBM Plex Mono",ui-monospace,monospace;color:var(--accent)}.kpi span{color:var(--muted);font-size:.9rem}
-h2{margin-top:40px;font-size:1.3rem;text-wrap:balance}ol.find{padding-left:1.2rem;max-width:75ch}ol.find li{margin:0 0 14px}ol.find h3{display:inline;font-size:1rem;margin:0}ol.find p{display:inline;margin:0}
-.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px;margin:16px 0;overflow-x:auto}.chart svg{max-width:100%;height:auto}
-.fig{margin:18px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#F2EFE9}.fig img{display:block;width:100%;height:auto}
-.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);margin:12px 0}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
-th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-weight:600}
-.auto{background:var(--card);border-left:4px solid var(--accent);border-radius:6px;padding:12px 16px;max-width:75ch}
-code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}a{color:var(--accent)}footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+:root{--bg:#ffffff;--ink:#111111;--body:#2e2e2e;--muted:#6b6b6b;--line:#e4e4e4;--rule:#111111;--accent:#9a6418;--amber:#c98a2b;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--bg:#121212;--ink:#f2f2f2;--body:#d6d6d6;--muted:#9a9a9a;--line:#2c2c2c;--rule:#f2f2f2;--accent:#d9a55b;--amber:#d9a55b;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--body);font:17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding-block:44px 72px;padding-inline:18px}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;color:var(--ink);letter-spacing:-.015em}
+h1{font-size:clamp(1.8rem,4.4vw,2.7rem);font-weight:700;line-height:1.1;margin:0;padding-top:18px;border-top:3px solid var(--rule);text-wrap:balance}p.by{color:var(--muted);margin:.5rem 0 1.4rem}.lede{max-width:66ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 24px;margin:28px 0}
+.kpi{border-top:1px solid var(--line);padding:14px 0}.kpi b{display:block;font:500 1.5rem "JetBrains Mono",ui-monospace,monospace;color:var(--ink)}.kpi:first-child b{color:var(--amber)}.kpi span{color:var(--muted);font-size:.9rem}
+h2{margin-top:48px;font-size:1.45rem;font-weight:700;text-wrap:balance}ol.find{padding-left:1.2rem;max-width:70ch}ol.find li{margin:0 0 14px}ol.find h3{display:inline;font-size:1.02rem;margin:0}ol.find p{display:inline;margin:0}
+.chart{margin:16px 0;overflow-x:auto}.chart svg{max-width:100%;height:auto}
+.fig{margin:26px 0;background:#fff}.fig img{display:block;width:100%;height:auto}
+.tbl{overflow-x:auto;border-top:2px solid var(--rule);margin:12px 0}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-weight:600}td{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.85rem}td:first-child{font-family:Inter,sans-serif;font-size:.92rem}
+.auto{border-left:3px solid var(--amber);padding:2px 0 2px 16px;max-width:70ch}
+code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.88em}a{color:var(--accent);text-underline-offset:2px}footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 </style></head><body><div class="wrap">
 <header><h1>AI inference economics: what it costs to serve an open LLM, and what hosts earn</h1>
 <p class="by">Tolu Oladuji &middot; October 2026 &middot; <a href="https://www.linkedin.com/in/oladuji-tolulope/">LinkedIn</a> &middot; <a href="https://github.com/oladujitolu-ai/ai-inference-economics">Code and data</a></p></header>
