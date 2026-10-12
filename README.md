@@ -9,9 +9,9 @@ A fully sourced, self-updating model of LLM inference unit economics. It combine
 1. **Model size drives cost.** On a rented H100 at the GPU-cloud median rate ($3.99 an hour) and 60% utilisation, serving costs about $0.12 per million output tokens for Llama 3.1 8B and $0.88 for Llama 3.3 70B: roughly 7x more for the larger model.
 2. **Where you rent matters as much as what you serve.** The same H100 rents for a median $3.49 an hour across 15 small GPU clouds and marketplaces, $3.99 at the larger GPU clouds and $11.06 on demand at AWS, Google Cloud and Azure. At the hyperscaler rate the 70B model costs $2.45 per million output tokens, above every host's list price, so nobody selling at these prices is renting hyperscaler capacity on demand.
 3. **At list prices the economics work, if you fill the GPUs.** A host renting GPU-cloud H100s at 60% utilisation would earn implied compute gross margins of 56-72% on Llama 3.1 8B and 39-58% on Llama 3.3 70B at Together AI, Fireworks AI and Amazon Bedrock list prices. Break-even utilisation for 70B is only 25-37%, so the risk is idle capacity, not price.
-4. **The long tail competes below big-host prices, and only new hardware makes that pay.** Across 21 providers and 36 offers on OpenRouter, smaller independent hosts price Llama 3.3 70B at a median $0.50 per million output tokens, against $0.72 at the big clouds. At those prices all 3 long-tail offers are below cost on rented H100s, even at small-cloud rates; on B200-class GPUs the same prices earn 18-39%. For small players, hardware generation is the business model.
+4. **The long tail competes below big-host prices, and only new hardware makes that pay.** Across 22 providers and 37 offers on OpenRouter, smaller independent hosts price Llama 3.3 70B at a median $0.50 per million output tokens, against $0.72 at the big clouds. At those prices all 3 long-tail offers are below cost on rented H100s, even at small-cloud rates; on B200-class GPUs the same prices earn 18-39%. For small players, hardware generation is the business model.
 5. **Next-generation hardware resets the cost curve.** On a B200 running FP4, 70B serving falls to $0.54 per million output tokens, 39% cheaper than on H100, even though the B200 rents for more ($7.49 an hour). Implied margins at the big hosts' prices rise to 63-74%.
-6. **Open models have a price range, not a price.** gpt-oss-120b has 21 offers ranging from $0.17 to $0.95 per million output tokens, a 5.6x spread. The big hosts cluster at $0.60, the long tail undercuts them (median $0.42), and custom-chip providers charge the most (median $0.75), likely a premium for speed.
+6. **Open models have a price range, not a price.** gpt-oss-120b has 22 offers ranging from $0.15 to $0.95 per million output tokens, a 6.3x spread. The big hosts cluster at $0.60, the long tail undercuts them (median $0.25), and custom-chip providers charge the most (median $0.75), likely a premium for speed.
 7. **Some prices sit below rented-GPU cost.** DeepInfra's Llama 3.3 70B Turbo price would need 126% utilisation of rented H100s to break even, which is impossible. That points to owned or contracted capacity, more aggressive optimisation (the Turbo variants are not defined on the pricing page), or market-share pricing.
 8. **Closed models price on value, not cost.** Published prices for OpenAI, Anthropic and Google models span $0.10-$10 per million input tokens and $0.50-$50 per million output tokens, a 100x spread at the output price.
 
@@ -40,7 +40,7 @@ Every offer on OpenRouter for the same three models, costed on small-cloud / mar
 | gpt-oss-120b | hyperscaler / big cloud | 4 | $0.39 | $0.17-$0.60 | 36% | 1 |
 | gpt-oss-120b | custom chips | 3 | $0.75 | $0.60-$0.95 | 67% | 0 |
 | gpt-oss-120b | major independent host | 4 | $0.55 | $0.17-$0.60 | 55% | 1 |
-| gpt-oss-120b | long-tail independent host | 10 | $0.42 | $0.18-$0.75 | 30% | 2 |
+| gpt-oss-120b | long-tail independent host | 11 | $0.25 | $0.15-$0.75 | 1% | 3 |
 
 ## Implied margins at the major hosts' list prices
 

@@ -1711,6 +1711,18 @@
   },
   {
    "model": "gpt-oss-120b",
+   "provider": "Venice",
+   "segment": "long-tail independent host",
+   "quantization": "int4",
+   "input_price": 0.03,
+   "output_price": 0.15,
+   "price": 0.15,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.6530111878802674,
+   "breakeven_util": 0.9918067127281603
+  },
+  {
+   "model": "gpt-oss-120b",
    "provider": "CoreWeave",
    "segment": "hyperscaler / big cloud",
    "quantization": "fp4",
@@ -1735,6 +1747,18 @@
   },
   {
    "model": "gpt-oss-120b",
+   "provider": "AkashML",
+   "segment": "long-tail independent host",
+   "quantization": "bf16",
+   "input_price": 0.03,
+   "output_price": 0.187,
+   "price": 0.187,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.32594480311251384,
+   "breakeven_util": 0.7955668818675082
+  },
+  {
+   "model": "gpt-oss-120b",
    "provider": "DeepInfra",
    "segment": "major independent host",
    "quantization": "bf16",
@@ -1747,22 +1771,10 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "AkashML",
+   "provider": "Crusoe",
    "segment": "long-tail independent host",
    "quantization": "bf16",
-   "input_price": 0.037,
-   "output_price": 0.187,
-   "price": 0.187,
-   "cost": 0.2479516781820401,
-   "gross_margin": -0.32594480311251384,
-   "breakeven_util": 0.7955668818675082
-  },
-  {
-   "model": "gpt-oss-120b",
-   "provider": "Mancer 2",
-   "segment": "long-tail independent host",
-   "quantization": "fp8",
-   "input_price": 0.045,
+   "input_price": 0.05,
    "output_price": 0.25,
    "price": 0.25,
    "cost": 0.2479516781820401,
@@ -1771,9 +1783,9 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "Crusoe",
+   "provider": "Mancer 2",
    "segment": "long-tail independent host",
-   "quantization": "bf16",
+   "quantization": "fp8",
    "input_price": 0.05,
    "output_price": 0.25,
    "price": 0.25,
@@ -2076,12 +2088,12 @@
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 10,
-   "median_output_price": 0.425,
-   "min_output_price": 0.18,
+   "offers": 11,
+   "median_output_price": 0.25,
+   "min_output_price": 0.15,
    "max_output_price": 0.75,
-   "median_gross_margin": 0.29747024515088644,
-   "offers_below_cost": 2
+   "median_gross_margin": 0.008193287271839655,
+   "offers_below_cost": 3
   }
  ]
 }

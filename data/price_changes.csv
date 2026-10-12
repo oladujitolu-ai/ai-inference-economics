@@ -1,1 +1,4 @@
 date,model,provider,quantization,old_input,old_output,new_input,new_output,event
+2026-10-12,openai/gpt-oss-120b,Venice,int4,,,0.03,0.15,new offer
+2026-10-12,openai/gpt-oss-120b,AkashML,bf16,0.037,0.187,0.03,0.187,price change
+2026-10-12,openai/gpt-oss-120b,Mancer 2,fp8,0.045,0.25,0.05,0.25,price change
