@@ -1711,6 +1711,18 @@
   },
   {
    "model": "gpt-oss-120b",
+   "provider": "Near AI",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.03,
+   "output_price": 0.15,
+   "price": 0.15,
+   "cost": 0.2479516781820401,
+   "gross_margin": -0.6530111878802674,
+   "breakeven_util": 0.9918067127281603
+  },
+  {
+   "model": "gpt-oss-120b",
    "provider": "Venice",
    "segment": "long-tail independent host",
    "quantization": "int4",
@@ -1882,18 +1894,6 @@
    "provider": "Nebius",
    "segment": "long-tail independent host",
    "quantization": "fp4",
-   "input_price": 0.15,
-   "output_price": 0.6,
-   "price": 0.6,
-   "cost": 0.2479516781820401,
-   "gross_margin": 0.5867472030299332,
-   "breakeven_util": 0.2479516781820401
-  },
-  {
-   "model": "gpt-oss-120b",
-   "provider": "DeepInfra",
-   "segment": "major independent host",
-   "quantization": "bf16",
    "input_price": 0.15,
    "output_price": 0.6,
    "price": 0.6,
@@ -2078,22 +2078,22 @@
   {
    "model": "gpt-oss-120b",
    "segment": "major independent host",
-   "offers": 4,
-   "median_output_price": 0.55,
+   "offers": 3,
+   "median_output_price": 0.5,
    "min_output_price": 0.17,
    "max_output_price": 0.6,
-   "median_gross_margin": 0.5454219233329265,
+   "median_gross_margin": 0.5040966436359198,
    "offers_below_cost": 1
   },
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 11,
+   "offers": 12,
    "median_output_price": 0.25,
    "min_output_price": 0.15,
    "max_output_price": 0.75,
    "median_gross_margin": 0.008193287271839655,
-   "offers_below_cost": 3
+   "offers_below_cost": 4
   }
  ]
 }
