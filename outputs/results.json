@@ -1698,18 +1698,6 @@
    "breakeven_util": 0.3220357079984383
   },
   {
-   "model": "Llama 3.3 70B",
-   "provider": "Together",
-   "segment": "major independent host",
-   "quantization": "unknown",
-   "input_price": 1.04,
-   "output_price": 1.04,
-   "price": 0.00208,
-   "cost": 0.000772885699196252,
-   "gross_margin": 0.6284203369248789,
-   "breakeven_util": 0.22294779784507268
-  },
-  {
    "model": "gpt-oss-120b",
    "provider": "Near AI",
    "segment": "long-tail independent host",
@@ -1816,6 +1804,18 @@
    "cost": 0.2479516781820401,
    "gross_margin": 0.008193287271839655,
    "breakeven_util": 0.5950840276368962
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Sail Research",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.06,
+   "output_price": 0.4,
+   "price": 0.4,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.3801208045448998,
+   "breakeven_util": 0.37192751727306006
   },
   {
    "model": "gpt-oss-120b",
@@ -2038,11 +2038,11 @@
   {
    "model": "Llama 3.3 70B",
    "segment": "major independent host",
-   "offers": 2,
-   "median_output_price": 0.68,
+   "offers": 1,
+   "median_output_price": 0.32,
    "min_output_price": 0.32,
-   "max_output_price": 1.04,
-   "median_gross_margin": -0.1058918543902414,
+   "max_output_price": 0.32,
+   "median_gross_margin": -0.8402040457053617,
    "offers_below_cost": 1
   },
   {
@@ -2088,7 +2088,7 @@
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 12,
+   "offers": 13,
    "median_output_price": 0.25,
    "min_output_price": 0.15,
    "max_output_price": 0.75,

@@ -4,3 +4,5 @@ date,model,provider,quantization,old_input,old_output,new_input,new_output,event
 2026-10-12,openai/gpt-oss-120b,Mancer 2,fp8,0.045,0.25,0.05,0.25,price change
 2026-10-19,openai/gpt-oss-120b,Near AI,fp4,,,0.03,0.15,new offer
 2026-10-19,openai/gpt-oss-120b,DeepInfra,bf16,0.15,0.6,0.037,0.17,price change
+2026-10-26,meta-llama/llama-3.3-70b-instruct,Together,unknown,1.04,1.04,,,offer removed
+2026-10-26,openai/gpt-oss-120b,Sail Research,fp4,,,0.06,0.4,new offer
