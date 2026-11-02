@@ -1759,6 +1759,18 @@
   },
   {
    "model": "gpt-oss-120b",
+   "provider": "PrimeIntellect",
+   "segment": "long-tail independent host",
+   "quantization": "fp4",
+   "input_price": 0.032,
+   "output_price": 0.12,
+   "price": 0.12,
+   "cost": 0.2479516781820401,
+   "gross_margin": -1.066263984850334,
+   "breakeven_util": 1.2397583909102003
+  },
+  {
+   "model": "gpt-oss-120b",
    "provider": "DeepInfra",
    "segment": "major independent host",
    "quantization": "bf16",
@@ -1783,9 +1795,9 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "Mancer 2",
+   "provider": "Novita",
    "segment": "long-tail independent host",
-   "quantization": "fp8",
+   "quantization": "fp4",
    "input_price": 0.05,
    "output_price": 0.25,
    "price": 0.25,
@@ -1795,10 +1807,10 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "Novita",
+   "provider": "Mancer 2",
    "segment": "long-tail independent host",
-   "quantization": "fp4",
-   "input_price": 0.05,
+   "quantization": "fp8",
+   "input_price": 0.055,
    "output_price": 0.25,
    "price": 0.25,
    "cost": 0.2479516781820401,
@@ -1963,6 +1975,18 @@
   },
   {
    "model": "gpt-oss-120b",
+   "provider": "DeepInfra",
+   "segment": "major independent host",
+   "quantization": "fp8",
+   "input_price": 0.2,
+   "output_price": 0.95,
+   "price": 0.95,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.7389982334925893,
+   "breakeven_util": 0.15660105990444637
+  },
+  {
+   "model": "gpt-oss-120b",
    "provider": "Cerebras",
    "segment": "custom chips",
    "quantization": "fp16",
@@ -2078,22 +2102,22 @@
   {
    "model": "gpt-oss-120b",
    "segment": "major independent host",
-   "offers": 3,
-   "median_output_price": 0.5,
+   "offers": 4,
+   "median_output_price": 0.55,
    "min_output_price": 0.17,
-   "max_output_price": 0.6,
-   "median_gross_margin": 0.5040966436359198,
+   "max_output_price": 0.95,
+   "median_gross_margin": 0.5454219233329265,
    "offers_below_cost": 1
   },
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 13,
+   "offers": 14,
    "median_output_price": 0.25,
-   "min_output_price": 0.15,
+   "min_output_price": 0.12,
    "max_output_price": 0.75,
    "median_gross_margin": 0.008193287271839655,
-   "offers_below_cost": 4
+   "offers_below_cost": 5
   }
  ]
 }
