@@ -1543,18 +1543,6 @@
   },
   {
    "model": "Llama 3.1 8B",
-   "provider": "Novita",
-   "segment": "long-tail independent host",
-   "quantization": "fp8",
-   "input_price": 0.02,
-   "output_price": 0.05,
-   "price": 7e-05,
-   "cost": 0.00010777626038685217,
-   "gross_margin": -0.5396608626693169,
-   "breakeven_util": 0.92379651760159
-  },
-  {
-   "model": "Llama 3.1 8B",
    "provider": "Groq",
    "segment": "custom chips",
    "quantization": "unknown",
@@ -1603,18 +1591,6 @@
   },
   {
    "model": "Llama 3.3 70B",
-   "provider": "Novita",
-   "segment": "long-tail independent host",
-   "quantization": "bf16",
-   "input_price": 0.135,
-   "output_price": 0.4,
-   "price": 0.000535,
-   "cost": 0.000772885699196252,
-   "gross_margin": -0.44464616672196633,
-   "breakeven_util": 0.8667877000331797
-  },
-  {
-   "model": "Llama 3.3 70B",
    "provider": "AkashML",
    "segment": "long-tail independent host",
    "quantization": "fp8",
@@ -1651,18 +1627,6 @@
   },
   {
    "model": "Llama 3.3 70B",
-   "provider": "SambaNova",
-   "segment": "custom chips",
-   "quantization": "unknown",
-   "input_price": 0.45,
-   "output_price": 0.9,
-   "price": 0.00135,
-   "cost": 0.000772885699196252,
-   "gross_margin": 0.42749207466944306,
-   "breakeven_util": 0.3435047551983342
-  },
-  {
-   "model": "Llama 3.3 70B",
    "provider": "Groq",
    "segment": "custom chips",
    "quantization": "unknown",
@@ -1672,6 +1636,18 @@
    "cost": 0.000772885699196252,
    "gross_margin": 0.43993789913315073,
    "breakeven_util": 0.33603726052010957
+  },
+  {
+   "model": "Llama 3.3 70B",
+   "provider": "SambaNova",
+   "segment": "custom chips",
+   "quantization": "unknown",
+   "input_price": 0.6,
+   "output_price": 1.2,
+   "price": 0.0018,
+   "cost": 0.000772885699196252,
+   "gross_margin": 0.5706190560020823,
+   "breakeven_util": 0.25762856639875065
   },
   {
    "model": "Llama 3.3 70B",
@@ -1749,7 +1725,7 @@
    "model": "gpt-oss-120b",
    "provider": "AkashML",
    "segment": "long-tail independent host",
-   "quantization": "bf16",
+   "quantization": "fp4",
    "input_price": 0.03,
    "output_price": 0.187,
    "price": 0.187,
@@ -1762,12 +1738,12 @@
    "provider": "PrimeIntellect",
    "segment": "long-tail independent host",
    "quantization": "fp4",
-   "input_price": 0.032,
-   "output_price": 0.12,
-   "price": 0.12,
+   "input_price": 0.036,
+   "output_price": 0.077,
+   "price": 0.077,
    "cost": 0.2479516781820401,
-   "gross_margin": -1.066263984850334,
-   "breakeven_util": 1.2397583909102003
+   "gross_margin": -2.2201516647018193,
+   "breakeven_util": 1.9320909988210915
   },
   {
    "model": "gpt-oss-120b",
@@ -1786,18 +1762,6 @@
    "provider": "Crusoe",
    "segment": "long-tail independent host",
    "quantization": "bf16",
-   "input_price": 0.05,
-   "output_price": 0.25,
-   "price": 0.25,
-   "cost": 0.2479516781820401,
-   "gross_margin": 0.008193287271839655,
-   "breakeven_util": 0.5950840276368962
-  },
-  {
-   "model": "gpt-oss-120b",
-   "provider": "Novita",
-   "segment": "long-tail independent host",
-   "quantization": "fp4",
    "input_price": 0.05,
    "output_price": 0.25,
    "price": 0.25,
@@ -1963,9 +1927,9 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "Mara",
+   "provider": "Parasail",
    "segment": "long-tail independent host",
-   "quantization": "unknown",
+   "quantization": "fp4",
    "input_price": 0.15,
    "output_price": 0.75,
    "price": 0.75,
@@ -2030,16 +1994,6 @@
    "offers_below_cost": 1
   },
   {
-   "model": "Llama 3.1 8B",
-   "segment": "long-tail independent host",
-   "offers": 1,
-   "median_output_price": 0.05,
-   "min_output_price": 0.05,
-   "max_output_price": 0.05,
-   "median_gross_margin": -0.5396608626693169,
-   "offers_below_cost": 1
-  },
-  {
    "model": "Llama 3.3 70B",
    "segment": "hyperscaler / big cloud",
    "offers": 3,
@@ -2053,10 +2007,10 @@
    "model": "Llama 3.3 70B",
    "segment": "custom chips",
    "offers": 2,
-   "median_output_price": 0.845,
+   "median_output_price": 0.995,
    "min_output_price": 0.79,
-   "max_output_price": 0.9,
-   "median_gross_margin": 0.4337149869012969,
+   "max_output_price": 1.2,
+   "median_gross_margin": 0.5052784775676165,
    "offers_below_cost": 0
   },
   {
@@ -2072,12 +2026,12 @@
   {
    "model": "Llama 3.3 70B",
    "segment": "long-tail independent host",
-   "offers": 3,
-   "median_output_price": 0.5,
-   "min_output_price": 0.4,
+   "offers": 2,
+   "median_output_price": 0.51,
+   "min_output_price": 0.5,
    "max_output_price": 0.52,
    "median_gross_margin": -0.07345235999479427,
-   "offers_below_cost": 3
+   "offers_below_cost": 2
   },
   {
    "model": "gpt-oss-120b",
@@ -2112,9 +2066,9 @@
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 14,
+   "offers": 13,
    "median_output_price": 0.25,
-   "min_output_price": 0.12,
+   "min_output_price": 0.077,
    "max_output_price": 0.75,
    "median_gross_margin": 0.008193287271839655,
    "offers_below_cost": 5

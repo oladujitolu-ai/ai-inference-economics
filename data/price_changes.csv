@@ -9,3 +9,12 @@ date,model,provider,quantization,old_input,old_output,new_input,new_output,event
 2026-11-02,openai/gpt-oss-120b,PrimeIntellect,fp4,,,0.032,0.12,new offer
 2026-11-02,openai/gpt-oss-120b,Mancer 2,fp8,0.05,0.25,0.055,0.25,price change
 2026-11-02,openai/gpt-oss-120b,DeepInfra,fp8,,,0.2,0.95,new offer
+2026-11-09,meta-llama/llama-3.1-8b-instruct,Novita,fp8,0.02,0.05,,,offer removed
+2026-11-09,meta-llama/llama-3.3-70b-instruct,SambaNova,unknown,0.45,0.9,0.6,1.2,price change
+2026-11-09,meta-llama/llama-3.3-70b-instruct,Novita,bf16,0.135,0.4,,,offer removed
+2026-11-09,openai/gpt-oss-120b,AkashML,fp4,,,0.03,0.187,new offer
+2026-11-09,openai/gpt-oss-120b,PrimeIntellect,fp4,0.032,0.12,0.036,0.077,price change
+2026-11-09,openai/gpt-oss-120b,Parasail,fp4,0.1,0.75,0.15,0.75,price change
+2026-11-09,openai/gpt-oss-120b,AkashML,bf16,0.03,0.187,,,offer removed
+2026-11-09,openai/gpt-oss-120b,Novita,fp4,0.05,0.25,,,offer removed
+2026-11-09,openai/gpt-oss-120b,Mara,unknown,0.15,0.75,,,offer removed
