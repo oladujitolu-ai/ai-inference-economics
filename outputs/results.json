@@ -1738,12 +1738,12 @@
    "provider": "PrimeIntellect",
    "segment": "long-tail independent host",
    "quantization": "fp4",
-   "input_price": 0.036,
-   "output_price": 0.077,
-   "price": 0.077,
+   "input_price": 0.035,
+   "output_price": 0.076,
+   "price": 0.076,
    "cost": 0.2479516781820401,
-   "gross_margin": -2.2201516647018193,
-   "breakeven_util": 1.9320909988210915
+   "gross_margin": -2.2625220813426328,
+   "breakeven_util": 1.9575132488055795
   },
   {
    "model": "gpt-oss-120b",
@@ -1763,18 +1763,6 @@
    "segment": "long-tail independent host",
    "quantization": "bf16",
    "input_price": 0.05,
-   "output_price": 0.25,
-   "price": 0.25,
-   "cost": 0.2479516781820401,
-   "gross_margin": 0.008193287271839655,
-   "breakeven_util": 0.5950840276368962
-  },
-  {
-   "model": "gpt-oss-120b",
-   "provider": "Mancer 2",
-   "segment": "long-tail independent host",
-   "quantization": "fp8",
-   "input_price": 0.055,
    "output_price": 0.25,
    "price": 0.25,
    "cost": 0.2479516781820401,
@@ -1804,6 +1792,18 @@
    "cost": 0.2479516781820401,
    "gross_margin": 0.4096388614713331,
    "breakeven_util": 0.3542166831172001
+  },
+  {
+   "model": "gpt-oss-120b",
+   "provider": "Mancer 2",
+   "segment": "long-tail independent host",
+   "quantization": "fp8",
+   "input_price": 0.08,
+   "output_price": 0.375,
+   "price": 0.375,
+   "cost": 0.2479516781820401,
+   "gross_margin": 0.3387955248478931,
+   "breakeven_util": 0.3967226850912641
   },
   {
    "model": "gpt-oss-120b",
@@ -1891,18 +1891,6 @@
   },
   {
    "model": "gpt-oss-120b",
-   "provider": "Phala",
-   "segment": "long-tail independent host",
-   "quantization": "unknown",
-   "input_price": 0.15,
-   "output_price": 0.6,
-   "price": 0.6,
-   "cost": 0.2479516781820401,
-   "gross_margin": 0.5867472030299332,
-   "breakeven_util": 0.2479516781820401
-  },
-  {
-   "model": "gpt-oss-120b",
    "provider": "Together",
    "segment": "major independent host",
    "quantization": "unknown",
@@ -1936,18 +1924,6 @@
    "cost": 0.2479516781820401,
    "gross_margin": 0.6693977624239466,
    "breakeven_util": 0.19836134254563206
-  },
-  {
-   "model": "gpt-oss-120b",
-   "provider": "DeepInfra",
-   "segment": "major independent host",
-   "quantization": "fp8",
-   "input_price": 0.2,
-   "output_price": 0.95,
-   "price": 0.95,
-   "cost": 0.2479516781820401,
-   "gross_margin": 0.7389982334925893,
-   "breakeven_util": 0.15660105990444637
   },
   {
    "model": "gpt-oss-120b",
@@ -2056,21 +2032,21 @@
   {
    "model": "gpt-oss-120b",
    "segment": "major independent host",
-   "offers": 4,
-   "median_output_price": 0.55,
+   "offers": 3,
+   "median_output_price": 0.5,
    "min_output_price": 0.17,
-   "max_output_price": 0.95,
-   "median_gross_margin": 0.5454219233329265,
+   "max_output_price": 0.6,
+   "median_gross_margin": 0.5040966436359198,
    "offers_below_cost": 1
   },
   {
    "model": "gpt-oss-120b",
    "segment": "long-tail independent host",
-   "offers": 13,
-   "median_output_price": 0.25,
-   "min_output_price": 0.077,
+   "offers": 12,
+   "median_output_price": 0.3125,
+   "min_output_price": 0.076,
    "max_output_price": 0.75,
-   "median_gross_margin": 0.008193287271839655,
+   "median_gross_margin": 0.17349440605986638,
    "offers_below_cost": 5
   }
  ]

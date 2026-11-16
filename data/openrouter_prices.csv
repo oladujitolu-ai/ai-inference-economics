@@ -16,12 +16,12 @@ gpt-oss-120b,Venice,long-tail independent host,int4,0.03,0.15,128000,https://ope
 gpt-oss-120b,CoreWeave,hyperscaler / big cloud,fp4,0.03,0.17,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,DekaLLM,long-tail independent host,bf16,0.03,0.18,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,AkashML,long-tail independent host,fp4,0.03,0.187,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
-gpt-oss-120b,PrimeIntellect,long-tail independent host,fp4,0.036,0.077,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
+gpt-oss-120b,PrimeIntellect,long-tail independent host,fp4,0.035,0.076,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,DeepInfra,major independent host,bf16,0.037,0.17,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Crusoe,long-tail independent host,bf16,0.05,0.25,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
-gpt-oss-120b,Mancer 2,long-tail independent host,fp8,0.055,0.25,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Sail Research,long-tail independent host,fp4,0.06,0.4,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,DigitalOcean,hyperscaler / big cloud,unknown,0.06,0.42,128000,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
+gpt-oss-120b,Mancer 2,long-tail independent host,fp8,0.08,0.375,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Google,hyperscaler / big cloud,unknown,0.09,0.36,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,BaseTen,major independent host,fp4,0.1,0.5,128072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Parasail,long-tail independent host,fp4,0.1,0.75,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
@@ -29,9 +29,7 @@ gpt-oss-120b,SambaNova,custom chips,unknown,0.14,0.95,131072,https://openrouter.
 gpt-oss-120b,Amazon Bedrock,hyperscaler / big cloud,unknown,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Nebius,long-tail independent host,fp4,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,SiliconFlow,long-tail independent host,fp8,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
-gpt-oss-120b,Phala,long-tail independent host,unknown,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Together,major independent host,unknown,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Groq,custom chips,unknown,0.15,0.6,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Parasail,long-tail independent host,fp4,0.15,0.75,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
-gpt-oss-120b,DeepInfra,major independent host,fp8,0.2,0.95,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
 gpt-oss-120b,Cerebras,custom chips,fp16,0.35,0.75,131072,https://openrouter.ai/api/v1/models/openai/gpt-oss-120b/endpoints,2026-10-06
